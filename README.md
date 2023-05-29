@@ -11,9 +11,11 @@ chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
 ```  
+tiktok：
 ```ruby
-tiktok：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok.png
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok.png
 ```  
+onedrive：
 ```ruby
-onedrive：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```   
