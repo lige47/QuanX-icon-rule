@@ -1,5 +1,9 @@
 自用图标和规则备份，也会更新一些新的东西出来  
 更新日期：2023.05.29  
+重大更新，图标仓库已经创立，无需单个图标导入链接  
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
+```  
 分流规则：  
 #chatgpt：
 ```ruby
