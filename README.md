@@ -7,6 +7,9 @@
 #微软服务：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.list  
 图标：  
 请复制你要的图标进行替换，不要在图标仓库里进行添加  
-chatgpt：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png  
+chatgpt：
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
+```  
 tiktok：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok.png  
 onedrive：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png  
