@@ -31,3 +31,4 @@ onedrive：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```   
+有需要适配图标的请联系tg：@shuyuan998  
