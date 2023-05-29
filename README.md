@@ -20,9 +20,12 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%
 图标：  
 重大更新，图标仓库已经创立，无需单个图标导入链接  
 图标库更新请删除旧的重新导入即可，目前适配图标46个  
+使用教程：  
+复制下面的这个链接  
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 ```  
+长按某个策略组或者订阅，选择图标，点击右上角加号，粘贴导入即可  
 部分图标单独链接：  
 chatgpt：
 ```ruby
