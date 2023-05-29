@@ -1,9 +1,5 @@
 自用图标和规则备份，也会更新一些新的东西出来  
 更新日期：2023.05.29  
-重大更新，图标仓库已经创立，无需单个图标导入链接  
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
-```  
 分流规则：  
 #chatgpt：
 ```ruby
@@ -22,7 +18,11 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.list
 ```  
 图标：  
-请复制你要的图标进行替换，不要在图标仓库里进行添加  
+重大更新，图标仓库已经创立，无需单个图标导入链接  
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
+```  
+单独图标：  
 chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
