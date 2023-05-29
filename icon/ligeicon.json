@@ -1,5 +1,2 @@
 {"name":"lige0407", "description":"自建图标库", "icons":[{"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}]}
-#模板：  
-``` ruby  
-{"name":"名字", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}
-``` 
+//{"name":"名字", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}
