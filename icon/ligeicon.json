@@ -1,1 +1,5 @@
-{"name":"lige0407", "description":"自建图标库", "icons":[{"name":"Icon-Name-1", "url":"https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/icon-samples\/cn.PNG"}, {"name":"Icon-Name-2", "url":"https:\/\/raw.githubusercontent.com\/crossutility\/Quantumult-X\/master\/icon-samples\/us.PNG"}, {"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}]}
+{"name":"lige0407", "description":"自建图标库", "icons":[{"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}]}
+#模板：  
+'''ruby  
+{"name":"名字", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"}
+'''
