@@ -9,3 +9,4 @@
 请复制你要的图标进行替换，不要在图标仓库里进行添加  
 chatgpt：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png  
 tiktok：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok.png  
+onedrive：https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png  
