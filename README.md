@@ -1,9 +1,6 @@
-<font color="red">自用图标和规则备份，也会更新一些新的东西出来</font>  
-自用图标和规则备份，也会更新一些新的东西出来  
-更新日期：2023年5月29日 21:50:50    
----
-图标：  
----
+# 更新日期：2023年5月29日 21:50:50    
+### 项目简介自用图标和规则备份，也会更新一些新的东西出来  
+## 图标：  
 重大更新，图标仓库已经创立，无需单个图标导入链接  
 图标库更新请删除旧的重新导入即可，目前适配图标59个  
 **使用教程：**  
@@ -26,9 +23,7 @@ onedrive：
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```   
 有需要适配图标的请联系tg：@shuyuan998或者在本项目反馈    
----
-分流规则：  
-----
+## 分流规则：  
 #chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
