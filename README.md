@@ -1,5 +1,6 @@
 # 更新日期：2023年5月30日 12:47:58    
-### 项目简介：自用图标和规则备份，也会更新一些新的东西出来  
+### 项目简介：
+自用图标和规则备份，也会更新一些新的东西出来  
 ## 图标：  
 ## 重大更新，图标仓库已经创立，无需单个图标导入链接  
 ## 图标库更新请删除旧的重新导入即可，目前适配图标73个  
@@ -43,3 +44,5 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.list
 ```  
+## 补充说明
+转载请注明出处，谢谢！
