@@ -36,6 +36,10 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
 ```  
+#游戏平台  
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/game.list
+```  
 #微软云盘：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E4%BA%91%E7%9B%98.list
