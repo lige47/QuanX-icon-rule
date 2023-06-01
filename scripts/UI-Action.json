@@ -1,6 +1,6 @@
 {
     "name":"UI 脚本合集",
-    "description":"UI-Interaction Script Gallery by Shawn",
+    "description":"离歌搬运自用备份",
     "task":[
         "event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true",
         "event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system",
