@@ -41,11 +41,11 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/game.list
 ```  
 #微软云盘：
 ```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E4%BA%91%E7%9B%98.list
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/onedrive.list
 ```  
 #微软服务：
 ```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.list
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/microsoft.list
 ```  
 #emby：  
 ```ruby
