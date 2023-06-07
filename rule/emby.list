@@ -1,26 +1,26 @@
-    - DOMAIN-SUFFIX,emby.prprcloud.com
-    - DOMAIN-SUFFIX,prpr.kyarucloud.moe
-    - DOMAIN-SUFFIX,emby.otakudrive.life
-    - DOMAIN-SUFFIX,emby2.otakudrive.life
-    - DOMAIN-SUFFIX,agahk1.jmsooo.com
-    - DOMAIN-SUFFIX,agasg1.jmsooo.com
-    - DOMAIN-SUFFIX,agajp1.jmsooo.com
-    - DOMAIN-SUFFIX,aws.jmsooo.com
-    - DOMAIN-SUFFIX,ntt1.jmsooo.com
-    - DOMAIN-SUFFIX,hinet.jmsooo.com
-    - DOMAIN-SUFFIX,cf1.jmsooo.com
-    - DOMAIN-SUFFIX,pornemby.club
-    - DOMAIN-SUFFIX,cf.odysseyplus.site
-    - DOMAIN-SUFFIX,agahk.odysseyplus.site
-    - DOMAIN-SUFFIX,agasg.odysseyplus.site
-    - DOMAIN-SUFFIX,ru.odysseyplus.site
-    - DOMAIN-SUFFIX,emby.plusmedia.site
-    - DOMAIN-SUFFIX,emby-cf.plusmedia.site
-    - DOMAIN-SUFFIX,emby.xeton.dev
-    - DOMAIN-SUFFIX,jellyfin.xeton.dev
-    - DOMAIN-SUFFIX,movie.xeton.dev
-    - DOMAIN-SUFFIX,servers.xeton.dev
-    - DOMAIN-SUFFIX,jmsooo.com
-    - DOMAIN-SUFFIX,cf.jmsooo.com
-    - DOMAIN-SUFFIX,hk.jmsooo.com
-    - DOMAIN-SUFFIX,sg.jmsooo.com
+- DOMAIN-SUFFIX,emby.prprcloud.com
+- DOMAIN-SUFFIX,prpr.kyarucloud.moe
+- DOMAIN-SUFFIX,emby.otakudrive.life
+- DOMAIN-SUFFIX,emby2.otakudrive.life
+- DOMAIN-SUFFIX,agahk1.jmsooo.com
+- DOMAIN-SUFFIX,agasg1.jmsooo.com
+- DOMAIN-SUFFIX,agajp1.jmsooo.com
+- DOMAIN-SUFFIX,aws.jmsooo.com
+- DOMAIN-SUFFIX,ntt1.jmsooo.com
+- DOMAIN-SUFFIX,hinet.jmsooo.com
+- DOMAIN-SUFFIX,cf1.jmsooo.com
+- DOMAIN-SUFFIX,pornemby.club
+- DOMAIN-SUFFIX,cf.odysseyplus.site
+- DOMAIN-SUFFIX,agahk.odysseyplus.site
+- DOMAIN-SUFFIX,agasg.odysseyplus.site
+- DOMAIN-SUFFIX,ru.odysseyplus.site
+- DOMAIN-SUFFIX,emby.plusmedia.site
+- DOMAIN-SUFFIX,emby-cf.plusmedia.site
+- DOMAIN-SUFFIX,emby.xeton.dev
+- DOMAIN-SUFFIX,jellyfin.xeton.dev
+- DOMAIN-SUFFIX,movie.xeton.dev
+- DOMAIN-SUFFIX,servers.xeton.dev
+- DOMAIN-SUFFIX,jmsooo.com
+- DOMAIN-SUFFIX,cf.jmsooo.com
+- DOMAIN-SUFFIX,hk.jmsooo.com
+- DOMAIN-SUFFIX,sg.jmsooo.com
