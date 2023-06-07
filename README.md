@@ -47,6 +47,10 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/%E5%BE%AE%E8%BD%AF%E6%9C%8D%E5%8A%A1.list
 ```  
+#emby：  
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/emby.list
+```  
 # 流媒体检测js脚本（搬运，仅更换图标）  
 ```ruby 
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/UI-Action.json
