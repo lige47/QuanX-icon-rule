@@ -51,6 +51,10 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/microsoft.lis
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/emby.list
 ```  
+#github：  
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/github.list
+```  
 # 流媒体检测js脚本（搬运，仅更换图标）  
 ```ruby 
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/UI-Action.json
