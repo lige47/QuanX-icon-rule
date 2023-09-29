@@ -1,6 +1,6 @@
 {
     "name":"UI 脚本合集",
-    "description":"离歌搬运自用备份",
+    "description":"离歌搬运自用备份改图标",
     "task":[
         "event-interaction https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/chaxun(3).png, enabled=true",
         "event-interaction https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/geo_location.js, tag=GeoIP 查询, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ip.png",
