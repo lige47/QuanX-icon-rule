@@ -14,6 +14,5 @@
         "event-interaction https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/traffic-check.js, tag=策略流量查询, img-url=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/liuliang(3).png, enabled=true",
         "event-network network-direct.js, tag=Direct 策略切换, img-url=switch.2.system",
         "event-interaction https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/server-info-plus.js, tag=节点信息Plus, img-url=info.bubble.system.system"
-        "event-interaction https://raw.githubusercontent.com/lige47/quanX/master/ip.js, tag=ip, img-url=info.bubble.system.system"
     ]
 }
