@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 ![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0105.jpeg)  
 成功导入！  
 ![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0106.jpeg)  
-部分图标单独链接：  圈x和loon通用
+## 部分图标单独链接：  圈x和loon通用
 chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
