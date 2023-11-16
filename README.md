@@ -32,19 +32,19 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 **有需要适配图标的请联系tg：@shuyuan998或者在本项目反馈**    
 ### 分流规则（搬运）：  
 ## 圈x
-# speedtest
+speedtest
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list
 ```
-# chatgpt
+chatgpt
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
 ```
-# 游戏平台
+游戏平台
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Game/Game.list
 ```
-## loon
+## Loon
 speedtest
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Speedtest/Speedtest.list
