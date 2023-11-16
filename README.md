@@ -44,6 +44,18 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Game/Game.list
 ```
+onedrive（微软云盘）
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OneDrive/OneDrive.list
+```
+微软服务
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list
+```
+github
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list
+```
 ## Loon
 speedtest
 ```ruby
@@ -56,6 +68,18 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 游戏平台
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list
+```
+onedrive（微软云盘）
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OneDrive/OneDrive.list
+```
+微软服务
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list
+```
+github
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list
 ```
 ## 通用（旧版）
 chatgpt：
