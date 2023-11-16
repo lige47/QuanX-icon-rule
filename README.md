@@ -45,40 +45,40 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Game/Game.list
 ```
 ## loon
-# speedtest
+speedtest
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Speedtest/Speedtest.list
 ```
-# chatgpt
+chatgpt
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list
 ```
-# 游戏平台
+游戏平台
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list
 ```
 ## 通用（旧版）
-# chatgpt：
+chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
 ```  
-#游戏平台  
+游戏平台  
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/game.list
 ```  
-#微软云盘：
+微软云盘：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/onedrive.list
 ```  
-#微软服务：
+微软服务：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/microsoft.list
 ```  
-#emby：  
+emby：  
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/emby.list
 ```  
-#github：  
+github：  
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/github.list
 ```  
