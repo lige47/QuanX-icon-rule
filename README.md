@@ -16,7 +16,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 ![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0105.jpeg)  
 成功导入！  
 ![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0106.jpeg)  
-## 部分图标单独链接：  圈x和loon通用
+### 部分图标单独链接：  圈x和loon通用
 chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
@@ -30,7 +30,18 @@ onedrive：
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```   
 **有需要适配图标的请联系tg：@shuyuan998或者在本项目反馈**    
-## 分流规则：  圈x和loon通用
+### 分流规则（搬运）：  
+## 圈x
+#speedtest
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list
+```
+## loon
+#speedtest
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Speedtest/Speedtest.list
+```
+## 通用
 #chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
