@@ -40,6 +40,10 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
 ```
+# 游戏平台
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Game/Game.list
+```
 ## loon
 # speedtest
 ```ruby
@@ -48,6 +52,10 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/
 # chatgpt
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list
+```
+# 游戏平台
+```ruby
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list
 ```
 ## 通用（旧版）
 # chatgpt：
