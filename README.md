@@ -1,4 +1,4 @@
-# 更新日期：2023年11月19日 20:24:43
+# 更新日期：2023年12月3日 08:55:49
 ### 项目简介：
 圈x和loon自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。
 ## 图标：  
@@ -30,7 +30,7 @@ onedrive：
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```
 ## 已经更新了的机场图标
-薯条 泡泡狗 云上风铃 夜煞云 mesl 奶昔 库洛米 syn 好鸭 naiu_net vv atom 花云 
+薯条 泡泡狗 云上风铃 夜煞云 mesl 奶昔 库洛米 syn 好鸭 naiu_net vv atom 花云 ouo network
 **有需要适配图标的请联系tg：@shuyuan998或者在本项目反馈**    
 ### 分流规则（搬运）：  
 ## 圈x
