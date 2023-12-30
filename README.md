@@ -29,10 +29,10 @@ onedrive：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
 ```
-## 已经更新了的机场图标
+### 已经更新了的机场图标
 薯条 泡泡狗 云上风铃 夜煞云 mesl 奶昔 库洛米 syn 好鸭 naiu_net vv atom 花云 ouo network
 **有需要适配图标的请联系tg：@shuyuan998或者在本项目反馈**    
-### 分流规则（搬运）：  
+# 分流规则（搬运）：  
 ## 圈x
 speedtest
 ```ruby
@@ -83,7 +83,7 @@ github
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list
 ```
-## 通用（旧版）
+# 通用（旧版）
 chatgpt：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
