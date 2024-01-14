@@ -1,4 +1,4 @@
-# 自用emby规则，目前包含hxd、终点站、syn、守候网络、misakaf、TreeDiagram
+# 自用emby规则，目前包含hxd、终点站、syn、守候网络、misakaf、TreeDiagram、misakaF
 DOMAIN-SUFFIX,emby.cn2gias.uk
 DOMAIN-SUFFIX,src-emby.cn2gias.uk
 DOMAIN-SUFFIX,bili.bili.rip
@@ -11,4 +11,5 @@ DOMAIN-SUFFIX,pub2.emby.wtf
 DOMAIN-SUFFIX,pub3.emby.wtf
 DOMAIN-SUFFIX,misakaf.org
 DOMAIN-SUFFIX,e.niceduck.me
+DOMAIN-SUFFIX,embyvip.misakaf.org
 IP-CIDR,102.223.180.108/32
