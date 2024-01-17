@@ -11,6 +11,9 @@ DOMAIN-SUFFIX,pub1.emby.wtf
 DOMAIN-SUFFIX,pub2.emby.wtf
 DOMAIN-SUFFIX,pub3.emby.wtf
 DOMAIN-SUFFIX,misakaf.org
+DOMAIN-SUFFIX,stream1.misakaf.org
+DOMAIN-SUFFIX,stream2.misakaf.org
+DOMAIN-SUFFIX,stream3.misakaf.org
 DOMAIN-SUFFIX,e.niceduck.me
 DOMAIN-SUFFIX,embyvip.misakaf.org
 DOMAIN-SUFFIX,push-kr.misakaf.org
