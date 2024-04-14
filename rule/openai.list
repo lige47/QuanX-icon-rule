@@ -1,22 +1,21 @@
+#Tidy：离歌
 # NAME: OpenAI
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-02-25 16:06:04
+# UPDATED: 2024-03-31 02:13:21
 # DOMAIN: 2
 # DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 23
+# DOMAIN-SUFFIX: 22
 # IP-ASN: 1
 # IP-CIDR: 2
-# TOTAL: 29
-DOMAIN-SUFFIX,chatgpt.com
+# TOTAL: 28
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,cdn.cloudflare.net
-DOMAIN-SUFFIX,challenges.cloudflare.com
+DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,client-api.arkoselabs.com
 DOMAIN-SUFFIX,events.statsigapi.net
@@ -38,6 +37,8 @@ DOMAIN-KEYWORD,openai
 IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
+
+
 # NAME: Gemini
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -59,6 +60,8 @@ DOMAIN-SUFFIX,apis.google.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
+
+
 # NAME: Claude
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
@@ -69,6 +72,8 @@ DOMAIN-KEYWORD,generativelanguage
 DOMAIN,cdn.usefathom.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+
+
 # NAME: Copilot
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
