@@ -1,5 +1,5 @@
 {"name":"离歌", "description":"无偿求更，图标包更新请关注TG频道：https://t.me/Loon_Quanx，作者离歌", "icons":[
-#国家图标
+//国家图标
 {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
 {"name":"Hongkong(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong(1).png"},
 {"name":"taiwan", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/taiwan.png"},
@@ -35,7 +35,7 @@
 {"name":"Thailand(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Thailand(1).png"},
 {"name":"United Kingdom", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/United Kingdom.png"},
 {"name":"United Kingdom(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/United Kingdom(1).png"},
-#应用图标
+//应用图标
 {"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"},
 {"name":"tiktok(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok(1).png"},
 {"name":"tiktok(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok((2).png"}, 
@@ -188,7 +188,7 @@
 {"name":"claude", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/claude.png"},
 {"name":"duolingo", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/duolingo.png"},
 {"name":"duolingo(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/duolingo(1).png"},
-#机场图标
+//机场图标
 {"name":"atomlantis", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/atomlantis.png"},
 {"name":"mesl", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mesl.png"},
 {"name":"Nexitally", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nexitally.png"},
