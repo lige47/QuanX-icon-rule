@@ -57,9 +57,7 @@ DOMAIN-SUFFIX,gemini.google.com
 DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-SUFFIX,apis.google.com
-DOMAIN-SUFFIX,aistudio.google.com
 DOMAIN-KEYWORD,colab
-DOMAIN-KEYWORD,aistudio
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
@@ -137,5 +135,7 @@ IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
-#coze
+#myself
 DOMAIN-SUFFIX,coze.com
+DOMAIN-SUFFIX,aistudio.google.com
+DOMAIN-KEYWORD,aistudio
