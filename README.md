@@ -3,26 +3,13 @@ TG频道：https://t.me/Loon_Quanx   有需要适配的图标可以在频道内�
 ### 项目简介：
 圈x和loon自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。
 ## 图标：  
-## 重大更新，图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标237个  
+## 图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标237个  
 ## 图标库链接：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 ```  
 ## 使用教程
 https://github.com/lige47/QuanX-icon-rule/blob/main/jiaochen/README.md
-### 部分图标单独链接：  圈x和loon通用
-chatgpt：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/ChatGPT-green.png
-```  
-tiktok：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/tiktok.png
-```  
-onedrive：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/OneDrive.png
-```
 ### 已经更新了的机场图标
 薯条 泡泡狗 云上风铃 夜煞云 mesl 奶昔 库洛米 syn 好鸭 naiu_net vv atom 花云 ouo network  aca 
 # 分流规则（自建）： 
