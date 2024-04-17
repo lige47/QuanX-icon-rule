@@ -18,10 +18,6 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
 ```
 # 分流规则（搬运）：  
 ## 圈x
-speedtest
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Speedtest/Speedtest.list
-```
 chatgpt
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
@@ -43,10 +39,6 @@ github
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list
 ```
 ## Loon
-speedtest
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Speedtest/Speedtest.list
-```
 chatgpt
 ```ruby
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list
