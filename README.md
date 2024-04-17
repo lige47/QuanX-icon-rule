@@ -4,19 +4,6 @@ TG频道：https://t.me/Loon_Quanx   有需要适配的图标可以在频道内�
 圈x和loon自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。
 ## 图标：  
 ## 重大更新，图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标237个  
-## 使用教程：   
-复制下面的这个链接  
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
-```  
-长按某个策略组或者订阅，选择图标  
-![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0104.jpeg)  
-点击右上角加号  
-![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0103.jpeg)  
-粘贴导入即可  
-![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0105.jpeg)  
-成功导入！  
-![示例图片](https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/jiaochen/IMG_0106.jpeg)  
 ### 部分图标单独链接：  圈x和loon通用
 chatgpt：
 ```ruby
