@@ -88,7 +88,8 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/github.list
 ```ruby 
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/UI-Action.json
 ```
-# Loon网络检测（入口、落地、已删除IP变化通知，完整版：https://t.me/zhetengsha） 
+# Loon网络检测（入口、落地、已删除IP变化通知） 
+### 完整版：https://t.me/zhetengsha
 ```ruby 
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/wangluoxinxi.plugin
 ```
