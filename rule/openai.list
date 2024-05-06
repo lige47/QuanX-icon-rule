@@ -130,6 +130,7 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openaicom-api
+DOMAIN-KEYWORD,copilot
 IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
