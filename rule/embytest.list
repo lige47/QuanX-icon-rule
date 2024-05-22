@@ -26,4 +26,7 @@ DOMAIN-SUFFIX,line.xmsl.org
 DOMAIN-SUFFIX,public.emby.ws
 DOMAIN-SUFFIX,embyplus.org
 DOMAIN-SUFFIX,cdn.bili.rip
+DOMAIN-SUFFIX,pub1cf.emby.wtf
+DOMAIN-SUFFIX,pub2cf.emby.wtf
+DOMAIN-SUFFIX,pub3cf.emby.wtf
 IP-CIDR,102.223.180.108/32
