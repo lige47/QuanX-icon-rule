@@ -1,15 +1,22 @@
 #Tidy：离歌
+
 # NAME: OpenAI
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-29 13:37:08
-# DOMAIN: 2
+# UPDATED: 2024-07-03 16:18:28
+# DOMAIN: 8
 # DOMAIN-KEYWORD: 1
-# DOMAIN-SUFFIX: 21
+# DOMAIN-SUFFIX: 24
 # IP-ASN: 1
 # IP-CIDR: 2
-# TOTAL: 27
+# TOTAL: 36
 DOMAIN,browser-intake-datadoghq.com
+DOMAIN,chat.openai.com.cdn.cloudflare.net
+DOMAIN,gemini.google.com
+DOMAIN,openai-api.arkoselabs.com
+DOMAIN,openaicom-api-bdcpf8c6d2e9atf6.z01.azurefd.net
+DOMAIN,openaicomproductionae4b.blob.core.windows.net
+DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,static.cloudflareinsights.com
 DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,algolia.net
@@ -28,6 +35,9 @@ DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
+DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openaiapi-site.azureedge.net
+DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,segment.io
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
@@ -41,7 +51,7 @@ IP-CIDR,64.23.132.171/32,no-resolve
 # NAME: Gemini
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-29 13:37:09
+# UPDATED: 2024-07-03 16:18:30
 # DOMAIN: 3
 # DOMAIN-KEYWORD: 3
 # DOMAIN-SUFFIX: 7
@@ -64,7 +74,7 @@ DOMAIN-KEYWORD,generativelanguage
 # NAME: Claude
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-29 13:37:08
+# UPDATED: 2024-07-03 16:18:28
 # DOMAIN: 1
 # DOMAIN-SUFFIX: 2
 # TOTAL: 3
@@ -76,7 +86,7 @@ DOMAIN-SUFFIX,claude.ai
 # NAME: Copilot
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2024-04-29 13:37:09
+# UPDATED: 2024-07-03 16:18:30
 # DOMAIN: 20
 # DOMAIN-KEYWORD: 1
 # DOMAIN-SUFFIX: 26
@@ -130,7 +140,6 @@ DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openaicom-api
-DOMAIN-KEYWORD,copilot
 IP-ASN,14061,no-resolve
 IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
