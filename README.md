@@ -1,8 +1,8 @@
-# 更新日期：2024年4月23日 10:26:40
+# 更新日期：2024年7月31日 17:53:57
 TG频道：https://t.me/Loon_Quanx   有需要适配的图标可以在频道内反馈
 ### 项目简介：
 圈x和loon自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
-## 图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标247个  
+## 图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标270个  
 ## 图标库链接：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
@@ -16,73 +16,9 @@ https://github.com/lige47/QuanX-icon-rule/blob/main/jiaochen/README.md
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
 ```
-# 分流规则（搬运）：  
-## 圈x
-chatgpt
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list
-```
-游戏平台
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Game/Game.list
-```
-onedrive（微软云盘）
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OneDrive/OneDrive.list
-```
-微软服务
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Microsoft/Microsoft.list
-```
-github
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/GitHub/GitHub.list
-```
-## Loon
-chatgpt
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OpenAI/OpenAI.list
-```
-游戏平台
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Game/Game.list
-```
-onedrive（微软云盘）
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/OneDrive/OneDrive.list
-```
-微软服务
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/Microsoft/Microsoft.list
-```
-github
-```ruby
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Loon/GitHub/GitHub.list
-```
-# 通用（旧版）
-chatgpt：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
-```  
-游戏平台  
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/game.list
-```  
-微软云盘：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/onedrive.list
-```  
-微软服务：
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/microsoft.list
-```  
 emby：  
 ```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/emby.list
-```  
-github：  
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/github.list
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/embytest.list
 ```  
 # 圈x流媒体检测js脚本（搬运，仅更换图标）  
 ```ruby 
