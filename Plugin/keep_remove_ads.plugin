@@ -1,0 +1,20 @@
+#!name = keep去广告
+#!desc = 移除信息流广告图片
+#!openUrl = https://apps.apple.com/app/id952694580
+#!author = 离歌
+#!keyword = 去广告, 离歌
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/keep.png
+#!date = 2024年8月1日 08:57:52
+
+[Rule]
+#信息流广告
+DOMAIN, static1.keepcdn.com/ark_optimus, REJECT
+
+[Rewrite]
+
+
+[Script]
+
+[Mitm]
+hostname = static1.keepcdn.com
