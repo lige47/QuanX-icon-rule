@@ -13,7 +13,7 @@
 
 [Rewrite]
 #信息流广告
-^https:\/\/static1\.keepcdn\.com\/ark_optimus reject-dict
+^https:\/\/static1\.keepcdn\.com\/ark_optimus reject-200
 
 [Script]
 
