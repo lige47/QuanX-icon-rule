@@ -145,6 +145,22 @@ IP-ASN,20473,no-resolve
 IP-CIDR,24.199.123.28/32,no-resolve
 IP-CIDR,64.23.132.171/32,no-resolve
 
+# JetBrains AI
+DOMAIN-SUFFIX,grazie.ai
+DOMAIN-SUFFIX,grazie.aws.intellij.net
+
+# Meta AI
+DOMAIN,imagine.meta.com
+DOMAIN-SUFFIX, meta.ai
+
+# Perplexity
+DOMAIN-SUFFIX,perplexity.ai
+
+# Mistral AI
+DOMAIN,chat.mistral.ai
+DOMAIN,console.mistral.ai
+DOMAIN-SUFFIX, mistral.ai
+
 #myself
 DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,aistudio.google.com
