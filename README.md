@@ -3,10 +3,15 @@ TG频道：https://t.me/Loon_Quanx   有需要适配的图标可以在频道内�
 ### 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
 ## 图标仓库已经创立，无需单个图标导入链接。图标库更新请删除旧的重新导入即可，目前适配图标332个  
-## 图标库链接：（适用Loon Quanx fileball）
+## 图标库链接：
+### 适用Loon Quanx fileball
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
-```  
+```
+### 适用surge
+```ruby
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json
+```
 ## 使用教程
 https://github.com/lige47/QuanX-icon-rule/blob/main/jiaochen/README.md
 ### 已经更新了的机场图标
