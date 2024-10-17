@@ -1,0 +1,21 @@
+{
+  "name":"离歌", "description":"无偿求更，图标包更新请关注TG频道：https://t.me/Loon_Quanx，作者离歌", 
+  "icons":[    
+    {"name":"hxd-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/hxd-emby.png"},
+    {"name":"losernotice-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/losernotice-emby.png"},
+    {"name":"CurlyMouse-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/CurlyMouse-emby.png"},
+    {"name":"Terminus-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Terminus-emby.png"},
+    {"name":"MisakaF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/MisakaF-emby.png"},
+    {"name":"AlphaTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV-emby.png"},
+    {"name":"PiliPili_Notice-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/PiliPili_Notice-emby.png"},
+    {"name":"zhipianren-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhipianren-emby.png"},
+    {"name":"zhipianren1-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhipianren1-emby.png"},
+    {"name":"fy-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fy-emby.png"},
+    {"name":"awa_tv-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa_tv-emby.png"},
+    {"name":"awa-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa-emby.png"},
+    {"name":"dvfilmupdating-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dvfilmupdating-emby.png"},
+    {"name":"plus-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus-emby.png"},
+    {"name":"plus1-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus1-emby.png"},
+    {"name":"TreeDiagram-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TreeDiagram-emby.png"}
+ ]
+}
