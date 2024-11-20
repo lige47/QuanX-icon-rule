@@ -56,6 +56,7 @@
     {"name":"pandatv-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/pandatv-emby.png"},
     {"name":"peach-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/peach-emby.png"},
     {"name":"Plumber-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Plumber-emby.png"},
+    {"name":"Plumber(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Plumber(1)-emby.png"},
     {"name":"Polo-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Polo-emby.png"},
     {"name":"PrejuDice-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/PrejuDice-emby.png"},
     {"name":"Raise-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Raise-emby.png"},
@@ -93,6 +94,7 @@
     {"name":"SIESTA-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/SIESTA-emby.png"},
     {"name":"apop-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/apop-emby.png"},
     {"name":"Nanflix-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nanflix-emby.png"},
-    {"name":"mooncake-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooncake-emby.png"}
+    {"name":"mooncake-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooncake-emby.png"},
+    {"name":"efu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/efu-emby.png"}
  ]
 }
