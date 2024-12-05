@@ -101,6 +101,8 @@
     {"name":"efu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/efu-emby.png"},
     {"name":"AWA-SF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AWA-SF-emby.png"},
     {"name":"Nebula-Media-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nebula-Media-emby.png"},
-    {"name":"feiyue", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/feiyue.png"}
+    {"name":"feiyue", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/feiyue.png"},
+    {"name":"micu_cloud_media-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/micu_cloud_media-emby.png"},
+    {"name":"AuroraMedia-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AuroraMedia-emby.png"}
  ]
 }
