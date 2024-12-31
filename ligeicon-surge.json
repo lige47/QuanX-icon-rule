@@ -265,6 +265,8 @@
     {"name":"bybit", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/bybit.png"},
     {"name":"Notion", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Notion.png"},
     {"name":"smoothrase", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/smoothrase.png"},
+    {"name":"OtterLife", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/OtterLife.png"},
+    {"name":"TouchRetouch", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TouchRetouch.png"},
     {"name":"quanqiu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu.png"},
     {"name":"quanqiu(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu(1).png"},
     {"name":"quanqiu(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu(2).png"},
@@ -540,5 +542,8 @@
     {"name":"SaturDay", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/SaturDay.png"},
     {"name":"ClashGOU", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ClashGOU.png"},
     {"name":"llgjc", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/llgjc.png"},
+    {"name":"aifun", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/aifun.png"},
+    {"name":"okanc(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/okanc(1).png"},
+    {"name":"okanc", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/okanc.png"},
   ]
 }
