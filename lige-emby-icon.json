@@ -29,6 +29,7 @@
     {"name":"fy-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fy-emby.png"},
     {"name":"awa_tv-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa_tv-emby.png"},
     {"name":"awa-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa-emby.png"},
+    {"name":"awa(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa(1)-emby.png"},
     {"name":"dvfilmupdating-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dvfilmupdating-emby.png"},
     {"name":"plus-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus-emby.png"},
     {"name":"plus1-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus1-emby.png"},
@@ -101,6 +102,7 @@
     {"name":"efu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/efu-emby.png"},
     {"name":"AWA-SF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AWA-SF-emby.png"},
     {"name":"Nebula-Media-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nebula-Media-emby.png"},
+    {"name":"Nebula-Media(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nebula-Media(1)-emby.png"},
     {"name":"feiyue", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/feiyue.png"},
     {"name":"micu_cloud_media-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/micu_cloud_media-emby.png"},
     {"name":"AuroraMedia-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AuroraMedia-emby.png"},
@@ -111,6 +113,7 @@
     {"name":"askUniversal-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/askUniversal-emby.png"},
     {"name":"SaturDay", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/SaturDay.png"},
     {"name":"nomaba-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/nomaba-emby.png"},
-    {"name":"StarCat-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/StarCat-emby.png"}
+    {"name":"StarCat-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/StarCat-emby.png"},
+    {"name":"Lemby-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Lemby-emby.png"}
  ]
 }
