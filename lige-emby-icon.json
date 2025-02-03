@@ -19,6 +19,7 @@
     {"name":"MisakaF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/MisakaF-emby.png"},
     {"name":"AlphaTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV-emby.png"},
     {"name":"AlphaTV(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(1)-emby.png"},
+    {"name":"AlphaTV(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(2)-emby.png"},
     {"name":"Robo-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Robo-emby.png"},
     {"name":"tg-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tg-emby.png"},
     {"name":"lily_yaya-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lily_yaya-emby.png"},
@@ -121,6 +122,12 @@
     {"name":"anquanwu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anquanwu-emby.png"},
     {"name":"nijigen-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/nijigen-emby.png"},
     {"name":"jingzhe-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/jingzhe-emby.png"},
-    {"name":"robo-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/robo-emby.png"}
+    {"name":"jingzhe(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/jingzhe(1)-emby.png"},
+    {"name":"robo-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/robo-emby.png"},
+    {"name":"moyunge-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/moyunge-emby.png"},
+    {"name":"ntRRR-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ntRRR-emby.png"},
+    {"name":"mefun-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mefun-emby.png"},
+    {"name":"Yukihasu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Yukihasu-emby.png"},
+    {"name":"DoveNest-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DoveNest-emby.png"}
  ]
 }
