@@ -1,3 +1,4 @@
+#离歌个人维护自用规则列表
 #欧易
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,oklink.com
@@ -6,8 +7,13 @@ DOMAIN-SUFFIX,okx.com
 #ffq
 DOMAIN-SUFFIX,ffq.la
 DOMAIN-SUFFIX,ffqla.net
+DOMAIN-SUFFIX,dwzhila.com
+DOMAIN-SUFFIX,ytools.cc
 DOMAIN-KEYWORD,ffqla
 
 #逆水寒台服
 DOMAIN-SUFFIX,easebar.com
 IP-CIDR,35.229.223.208/32,no-resolve
+
+#影巢
+DOMAIN-SUFFIX,hdhive.online
