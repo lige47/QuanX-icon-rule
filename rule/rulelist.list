@@ -1,24 +1,23 @@
 #离歌个人维护自用规则列表
 
 #机场官网类
-DOMAIN-SUFFIX,sntp.uk
-DOMAIN-SUFFIX,ouonetwork.com
-DOMAIN-SUFFIX,玉兔丫.com
-DOMAIN-SUFFIX,fanrr.sbs
-DOMAIN-SUFFIX,niercloud.com
-DOMAIN-SUFFIX,esncnet.com
-DOMAIN-SUFFIX,loveyesha.com
-DOMAIN-SUFFIX,nutbit.net
-DOMAIN-SUFFIX,ffvipaffb01.cc
-DOMAIN-SUFFIX,tunnelx.io
-DOMAIN-SUFFIX,sudatech.store
-DOMAIN-SUFFIX,kuromis.com
-DOMAIN-SUFFIX,nexitally.com
 DOMAIN-SUFFIX,afun.la
-DOMAIN-SUFFIX,mesl.cloud
 DOMAIN-SUFFIX,eggtartcloud.shop
-DOMAIN-SUFFIX,justfancy.net
 DOMAIN-SUFFIX,esncnet.com
+DOMAIN-SUFFIX,fanrr.sbs
+DOMAIN-SUFFIX,ffvipaffb01.cc
+DOMAIN-SUFFIX,justfancy.net
+DOMAIN-SUFFIX,kuromis.com
+DOMAIN-SUFFIX,loveyesha.com
+DOMAIN-SUFFIX,mesl.cloud
+DOMAIN-SUFFIX,nexitally.com
+DOMAIN-SUFFIX,niercloud.com
+DOMAIN-SUFFIX,nutbit.net
+DOMAIN-SUFFIX,ouonetwork.com
+DOMAIN-SUFFIX,sntp.uk
+DOMAIN-SUFFIX,sudatech.store
+DOMAIN-SUFFIX,tunnelx.io
+DOMAIN-SUFFIX,玉兔丫.com
 DOMAIN-KEYWORD,niceduck
 
 #欧易
@@ -27,9 +26,9 @@ DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,okx.com
 
 #ffq
+DOMAIN-SUFFIX,dwzhila.com
 DOMAIN-SUFFIX,ffq.la
 DOMAIN-SUFFIX,ffqla.net
-DOMAIN-SUFFIX,dwzhila.com
 DOMAIN-SUFFIX,ytools.cc
 DOMAIN-KEYWORD,ffqla
 
@@ -44,8 +43,8 @@ DOMAIN-SUFFIX,hdhive.online
 IP-CIDR,27.106.119.88/32,no-resolve
 
 #ip类型
-DOMAIN-SUFFIX,ipjiance.com
-DOMAIN-SUFFIX,whoer.net
 DOMAIN-SUFFIX,ipinfo.io
+DOMAIN-SUFFIX,ipjiance.com
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ping0.cc
+DOMAIN-SUFFIX,whoer.net
