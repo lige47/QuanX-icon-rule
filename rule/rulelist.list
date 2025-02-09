@@ -32,3 +32,6 @@ IP-CIDR,35.229.223.208/32,no-resolve
 
 #影巢
 DOMAIN-SUFFIX,hdhive.online
+
+#Alist
+IP-CIDR,27.106.119.88/32,no-resolve
