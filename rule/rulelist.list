@@ -22,11 +22,6 @@ DOMAIN-SUFFIX,tunnelx.io
 DOMAIN-SUFFIX,玉兔丫.com
 DOMAIN-KEYWORD,niceduck
 
-#欧易
-DOMAIN-SUFFIX,okex.com
-DOMAIN-SUFFIX,oklink.com
-DOMAIN-SUFFIX,okx.com
-
 #ffq
 DOMAIN-SUFFIX,dwzhila.com
 DOMAIN-SUFFIX,ffq.la
@@ -50,3 +45,10 @@ DOMAIN-SUFFIX,ipjiance.com
 DOMAIN-SUFFIX,ip.sb
 DOMAIN-SUFFIX,ping0.cc
 DOMAIN-SUFFIX,whoer.net
+
+#杂七杂八
+DOMAIN-SUFFIX,okex.com
+DOMAIN-SUFFIX,oklink.com
+DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,cybermania.ws
+DOMAIN-SUFFIX,lrepacks.net
