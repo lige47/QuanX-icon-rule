@@ -143,6 +143,9 @@
     {"name":"DimLight-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DimLight-emby.png"},
     {"name":"yuanwei-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yuanwei-emby.png"},
     {"name":"DB-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DB-emby.png"},
-    {"name":"epub", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/epub.png"}
+    {"name":"epub", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/epub.png"},
+    {"name":"doubon(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/doubon(1)-emby.png"},
+    {"name":"doubon(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/doubon(2)-emby.png"},
+    {"name":"yezi-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yezi-emby.png"}
  ]
 }
