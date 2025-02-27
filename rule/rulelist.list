@@ -32,10 +32,6 @@ DOMAIN-SUFFIX,msl.la
 DOMAIN-SUFFIX,ytools.cc
 DOMAIN-KEYWORD,ffqla
 
-#逆水寒台服
-DOMAIN-SUFFIX,easebar.com
-IP-CIDR,35.229.223.208/32,no-resolve
-
 #影巢
 DOMAIN-SUFFIX,hdhive.online
 
