@@ -71,6 +71,7 @@ IP-CIDR,220.181.174.34/32,no-resolve
 
 #杂七杂八
 DOMAIN-SUFFIX,cybermania.ws
+DOMAIN-SUFFIX,doppiocdn.live
 DOMAIN-SUFFIX,lrepacks.net
 DOMAIN-SUFFIX,missav.ws
 DOMAIN-SUFFIX,myavlive.com
