@@ -41,6 +41,7 @@ DOMAIN-SUFFIX,hdhive.online
 IP-CIDR,27.106.119.88/32,no-resolve
 
 #ip类型
+DOMAIN-SUFFIX,api.ipify.org
 DOMAIN-SUFFIX,ipinfo.io
 DOMAIN-SUFFIX,ipjiance.com
 DOMAIN-SUFFIX,ip.sb
