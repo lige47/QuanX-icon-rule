@@ -19,8 +19,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-em
 ```
 ## 使用教程
 https://github.com/lige47/QuanX-icon-rule/blob/main/jiaochen/README.md
-### 已经更新了的机场图标
-奶昔 按摩院 tag 库洛米 mesl 花云 薯条 泡泡狗 云上风铃 夜煞云  syn 好鸭 naiu_net vv atom  ouo network  aca 
+
 # 分流规则（自建）： 
 各大AI模型
 ```ruby
