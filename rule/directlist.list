@@ -1,6 +1,6 @@
 #离歌个人维护自用直连列表
 
 DOMAIN-SUFFIX,189sd.cn
-IP-CIDR, 34.81.152.255/32,no-resolve
-IP-CIDR, 35.229.223.208/32,no-resolve
-IP-CIDR, 104.199.187.91/32,no-resolve
+IP-CIDR,34.81.152.255/32,no-resolve
+IP-CIDR,35.229.223.208/32,no-resolve
+IP-CIDR,104.199.187.91/32,no-resolve
