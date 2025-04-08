@@ -162,6 +162,8 @@
     {"name":"DPeak-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DPeak-emby.png"},
     {"name":"zox-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox-emby.png"},
     {"name":"UHD", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/UHD.png"},
-    {"name":"oceancloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/oceancloud-emby.png"}
+    {"name":"oceancloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/oceancloud-emby.png"},
+    {"name":"oceancloud(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/oceancloud(1)-emby.png"},
+    {"name":"anran-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anran-emby.png"}
  ]
 }
