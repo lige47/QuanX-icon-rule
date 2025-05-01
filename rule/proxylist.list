@@ -87,3 +87,11 @@ DOMAIN-SUFFIX,subhd.tv
 DOMAIN-SUFFIX,taiwebs.com
 DOMAIN-SUFFIX,vercel.com
 DOMAIN-SUFFIX,webbd.top
+
+#TMDB/IMDB
+DOMAIN-SUFFIX,themoviedb.org
+DOMAIN-SUFFIX,tmdb.org
+DOMAIN-SUFFIX,boxofficemojo.com
+DOMAIN-SUFFIX,imdb.com
+DOMAIN-SUFFIX,imdb.to
+DOMAIN-SUFFIX,media-imdb.com
