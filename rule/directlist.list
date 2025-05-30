@@ -9,7 +9,6 @@ IP-CIDR,34.81.152.255/32,no-resolve
 IP-CIDR,35.185.132.164/32,no-resolve
 IP-CIDR,35.229.210.65/32,no-resolve
 IP-CIDR,35.229.223.208/32,no-resolve
-
 IP-CIDR,104.199.187.91/32,no-resolve
 
 #Windows联网检测
