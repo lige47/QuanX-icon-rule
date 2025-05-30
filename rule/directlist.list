@@ -2,6 +2,7 @@
 
 #逆水寒台服
 DOMAIN-SUFFIX,189sd.cn
+DOMAIN-SUFFIX,easebar.com
 IP-CIDR,34.80.15.254/32,no-resolve
 IP-CIDR,34.81.81.165/32,no-resolve
 IP-CIDR,34.81.121.214/32,no-resolve
@@ -11,7 +12,6 @@ IP-CIDR,35.189.163.243/32,no-resolve
 IP-CIDR,35.201.145.166/32,no-resolve
 IP-CIDR,35.229.210.65/32,no-resolve
 IP-CIDR,35.229.223.208/32,no-resolve
-
 IP-CIDR,47.83.46.107/32,no-resolve
 IP-CIDR,47.83.46.188/32,no-resolve
 IP-CIDR,104.199.187.91/32,no-resolve
