@@ -2,7 +2,7 @@
 
 #逆水寒台服
 DOMAIN-SUFFIX,189sd.cn
-DOMAIN-SUFFIX,api.swordofjustice.com
+DOMAIN-SUFFIX,swordofjustice.com
 DOMAIN-SUFFIX,easebar.com
 
 IP-CIDR,34.80.15.254/32,no-resolve
