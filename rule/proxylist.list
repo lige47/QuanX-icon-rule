@@ -82,6 +82,7 @@ IP-CIDR,220.181.174.226/32,no-resolve
 IP-CIDR,220.181.174.34/32,no-resolve
 
 #杂七杂八
+DOMAIN-SUFFIX,clashwiki.net
 DOMAIN-SUFFIX,cybermania.ws
 DOMAIN-SUFFIX,doppiocdn.live
 DOMAIN-SUFFIX,imbt.one
