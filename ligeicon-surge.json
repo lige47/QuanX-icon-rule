@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@Loon_Quanx 版本250706", 
+  "name":"TG频道@Loon_Quanx 版本250708", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -137,6 +137,7 @@
     {"name":"microsoft", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/microsoft.png"},
     {"name":"microsoft(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/microsoft(1).png"},
     {"name":"microsoft(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/microsoft(2).png"},
+    {"name":"teams", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/teams.png"},
     {"name":"wyy", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wyy.png"},
     {"name":"wyy(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wyy(1).png"},
     {"name":"kugou", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/kugou.png"},
@@ -576,6 +577,7 @@
     {"name":"libhsulife", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/libhsulife.png"},
     {"name":"Cloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Cloud-emby.png"},
     {"name":"chips-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chips-emby.png"},
+    {"name":"youqibing-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/youqibing-emby.png"},
     {"name":"atomlantis", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/atomlantis.png"},
     {"name":"mesl(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mesl(2).png"},
     {"name":"mesl(3)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mesl(3).png"},
