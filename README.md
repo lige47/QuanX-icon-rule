@@ -1,10 +1,10 @@
 # 请勿Fork！！请勿Fork！！请勿Fork！！
-# 更新日期：2025年6月12日09:08:39
+# 更新日期：2025年7月10日12:18:19
 TG频道：https://t.me/Loon_Quanx   有需要适配的图标可以在频道内反馈
 ### 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
 ## 图标库链接：
-### 适用Loon Quanx fileball Senplayer
+### 适用  Quanx  Loon  Fileball Senplayer Yamby Hills
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 ```
@@ -13,7 +13,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json
 ```
 
-### emby专属图标库（适用fileball Senplayer）
+### emby专属图标库（建议 Fileball Senplayer  Yamby Hills使用）
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json
 ```
