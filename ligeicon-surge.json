@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@Loon_Quanx 版本250709", 
+  "name":"TG频道@Loon_Quanx 版本250710", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -766,5 +766,7 @@
     {"name":"Nerwo", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nerwo.png"},
     {"name":"jiux", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/jiux.png"},
     {"name":"lzymtzpd", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lzymtzpd.png"},
+    {"name":"ikuuu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ikuuu.png"},
+    {"name":"linkcube", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/linkcube.png"},
   ]
 }
