@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@Loon_Quanx 您当前版本日期为250720", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@Loon_Quanx 您当前版本日期为250721", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -50,6 +50,7 @@
     {"name":"shouhou(3)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou(3).png"},
     {"name":"shouhou(4)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou(4).png"},
     {"name":"shouhou(5)SNTP-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou(5)SNTP-emby.png"},
+    {"name":"shouhou(6)SNTP-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou(6)SNTP-emby.png"},
     {"name":"9club-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/9club-emby.png"},
     {"name":"boluo-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/boluo-emby.png"},
     {"name":"cc-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/cc-emby.png"},
@@ -212,6 +213,7 @@
     {"name":"rjf-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/rjf-emby.png"},
     {"name":"rjf(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/rjf(1)-emby.png"},
     {"name":"star-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/star-emby.png"},
-    {"name":"star2-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/star2-emby.png"}
+    {"name":"star2-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/star2-emby.png"},
+    {"name":"wujiecloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wujiecloud-emby.png"}
  ]
 }
