@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@Loon_Quanx 您当前版本日期为250723", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@Loon_Quanx 您当前版本日期为250725", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -117,6 +117,7 @@
     {"name":"SIESTA-(2)emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/SIESTA-(2)emby.png"},
     {"name":"apop-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/apop-emby.png"},
     {"name":"Nanflix-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nanflix-emby.png"},
+    {"name":"Nanflix(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nanflix(1)-emby.png"},
     {"name":"mooncake-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooncake-emby.png"},
     {"name":"efu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/efu-emby.png"},
     {"name":"AWA-SF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AWA-SF-emby.png"},
@@ -219,6 +220,8 @@
     {"name":"star-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/star-emby.png"},
     {"name":"star2-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/star2-emby.png"},
     {"name":"wujiecloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wujiecloud-emby.png"},
-    {"name":"wujiecloud-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/hohai-emby.png"}
+    {"name":"hohai-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/hohai-emby.png"},
+    {"name":"fufu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fufu)-emby.png"},
+    {"name":"fufu(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fufu(1)-emby.png"}
  ]
 }
