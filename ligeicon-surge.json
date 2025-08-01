@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250729", 
+  "name":"TG频道@ligeicon 版本250801", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -361,6 +361,7 @@
     {"name":"Sharon", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Sharon.png"},
     {"name":"mexc", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mexc.png"},
     {"name":"zoomearth", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zoomearth.png"},
+    {"name":"tmobile", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tmobile.png"},
     {"name":"quanqiu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu.png"},
     {"name":"quanqiu(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu(1).png"},
     {"name":"quanqiu(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quanqiu(2).png"},
@@ -605,5 +606,6 @@
     {"name":"ikuuu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ikuuu.png"},
     {"name":"linkcube", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/linkcube.png"},
     {"name":"liangxinyun", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/liangxinyun.png"},
+    {"name":"Lray", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Lray.png"},
   ]
 }
