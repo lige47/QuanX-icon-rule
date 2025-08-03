@@ -1,5 +1,5 @@
 {
-  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250801", 
+  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250803", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -612,4 +612,5 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"}
   ]
 }
+
 
