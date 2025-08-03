@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250801", 
+  "name":"TG频道@ligeicon 版本250803", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -608,5 +608,8 @@
     {"name":"liangxinyun", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/liangxinyun.png"},
     {"name":"Lray", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Lray.png"},
     {"name":"akkcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/akkcloud.png"},
+    {"name":"xiaoyi", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi.png"},
+    {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"},
   ]
 }
+
