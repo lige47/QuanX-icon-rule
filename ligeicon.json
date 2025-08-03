@@ -254,7 +254,12 @@
     {"name":"PrimeVideo", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/PrimeVideo.png"},
     {"name":"telegram", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram.png"},
     {"name":"telegram(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram(1).png"},
+    {"name":"telegram(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram(2).png"},
+    {"name":"telegram(3)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram(3).png"},
+    {"name":"telegram(4)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram(4).png"},
     {"name":"telegram(blue1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/telegram(blue1).png"},
+    {"name":"Telegrampremium", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Telegrampremium.png"},
+    {"name":"Telegrampremium(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Telegrampremium(1).png"},
     {"name":"spotify", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify.png"},
     {"name":"spotify(green)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify(green).png"},
     {"name":"spotify(green)(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify(green)(1).png"},
@@ -316,7 +321,6 @@
     {"name":"dropbox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dropbox.png"},
     {"name":"dropbox(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dropbox(1).png"},
     {"name":"Threads", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Threads.png"},
-    {"name":"Telegrampremium", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Telegrampremium.png"},
     {"name":"BlueskySocial", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/BlueskySocial.png"},
     {"name":"BlueskySocial(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/BlueskySocial(1).png"},
     {"name":"redotpay", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/redotpay.png"},
@@ -612,5 +616,6 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"}
   ]
 }
+
 
 
