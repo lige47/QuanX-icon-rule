@@ -22,3 +22,8 @@ IP-CIDR,104.199.187.91/32,no-resolve
 #Windows联网检测
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
+
+#emby
+DOMAIN-SUFFIX,younoyes.com
+DOMAIN-SUFFIX,567741.xyz
+IP-CIDR,103.141.183.18/32,no-resolve
