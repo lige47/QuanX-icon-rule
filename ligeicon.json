@@ -1,5 +1,5 @@
 {
-  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250803", 
+  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250808", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -193,6 +193,7 @@
     {"name":"forward", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/forward.png"},
     {"name":"forward(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/forward(1).png"},
     {"name":"reflix", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/reflix.png"},
+    {"name":"xiaohuanRodelPlayer", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaohuanRodelPlayer.png"},
     {"name":"keep", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/keep.png"},
     {"name":"zhihu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhihu.png"},
     {"name":"tt", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tt.png"},
@@ -615,6 +616,7 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"}
   ]
 }
+
 
 
 
