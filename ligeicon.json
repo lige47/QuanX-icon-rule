@@ -1,5 +1,5 @@
 {
-  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250809", 
+  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250811", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -294,6 +294,7 @@
     {"name":"bian", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/bian.png"},
     {"name":"okx", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/okx.png"},
     {"name":"okx(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/okx(1).png"},
+    {"name":"gateio", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/gateio.png"},
     {"name":"twitch", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/twitch.png"},
     {"name":"twitch(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/twitch(1).png"},
     {"name":"whatsapp", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/whatsapp.png"}, 
@@ -618,6 +619,7 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"}
   ]
 }
+
 
 
 
