@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250811", 
+  "name":"TG频道@ligeicon 版本250812", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -225,6 +225,8 @@
     {"name":"xiechenglvxing(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiechenglvxing(1).png"},
     {"name":"zhangshangshenghuo", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhangshangshenghuo.png"},
     {"name":"zhangshangshenghuo(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhangshangshenghuo(1).png"},
+    {"name":"fengxingshipin", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fengxingshipin.png"},
+    {"name":"DJmusic", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DJmusic.png"},
     {"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"},
     {"name":"tiktok(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok(1).png"},
     {"name":"tiktok(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok((2).png"}, 
@@ -619,6 +621,7 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"},
   ]
 }
+
 
 
 
