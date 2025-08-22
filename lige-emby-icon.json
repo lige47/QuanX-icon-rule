@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250818", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250822", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -239,9 +239,14 @@
     {"name":"anisaga-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anisaga-emby.png"},
     {"name":"liulimen-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/liulimen-emby.png"},
     {"name":"xinghai(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xinghai(1)-emby.png"},
-    {"name":"xinghai-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xinghai-emby.png"}
+    {"name":"xinghai-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xinghai-emby.png"},
+    {"name":"fworks(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fworks(1)-emby.png"},
+    {"name":"fworks-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/fworks-emby.png"},
+    {"name":"mebimmer-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mebimmer-emby.png"},
+    {"name":"mebimmer(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mebimmer(1)-emby.png"}
  ]
 }
+
 
 
 
