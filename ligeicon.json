@@ -1,5 +1,5 @@
 {
-  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250822", 
+  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250826", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -230,6 +230,8 @@
     {"name":"leshishipin", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/leshishipin.png"},
     {"name":"feiniufnOS", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/feiniufnOS.png"},
     {"name":"feiniufnOS(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/feiniufnOS(1).png"},
+    {"name":"wuyouxing", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wuyouxing.png"},
+    {"name":"zhaoshangyinhang", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhaoshangyinhang.png"},
     {"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"},
     {"name":"tiktok(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok(1).png"},
     {"name":"tiktok(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok((2).png"},
@@ -285,6 +287,7 @@
     {"name":"Swiftgram(14)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Swiftgram(14).png"},
     {"name":"Swiftgram(15)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Swiftgram(15).png"},
     {"name":"Swiftgram(16)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Swiftgram(16).png"},
+    {"name":"Turrit", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Turrit.png"},
     {"name":"spotify", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify.png"},
     {"name":"spotify(green)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify(green).png"},
     {"name":"spotify(green)(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/spotify(green)(1).png"},
@@ -641,6 +644,7 @@
     {"name":"xiaoyi(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xiaoyi(1).png"}
   ]
 }
+
 
 
 
