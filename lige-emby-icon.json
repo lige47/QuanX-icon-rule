@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250826", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250828", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -12,6 +12,7 @@
     {"name":"alidrive", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/alidrive.png"},
     {"name":"baidunetdisk", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/baidunetdisk.png"},
     {"name":"baidunetdisk(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/baidunetdisk(1).png"},
+    {"name":"pikpak", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/pikpak.png"},
     {"name":"alist", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/alist.png"},
     {"name":"alist(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/alist(1).png"},
     {"name":"OpenList", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/OpenList.png"},
@@ -247,6 +248,7 @@
     {"name":"paolu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/paolu-emby.png"}
  ]
 }
+
 
 
 
