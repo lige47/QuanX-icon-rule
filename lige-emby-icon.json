@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250831", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250901", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -51,6 +51,7 @@
     {"name":"plus1-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus1-emby.png"},
     {"name":"plus2-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus2-emby.png"},
     {"name":"plus3-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus3-emby.png"},
+    {"name":"plus4-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/plus4-emby.png"},
     {"name":"TreeDiagram-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TreeDiagram-emby.png"},
     {"name":"shouhou", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou.png"},
     {"name":"shouhou(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shouhou(1).png"},
@@ -250,8 +251,11 @@
     {"name":"mebimmer-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mebimmer-emby.png"},
     {"name":"mebimmer(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mebimmer(1)-emby.png"},
     {"name":"paolu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/paolu-emby.png"},
-    {"name":"baicaicabbageTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/baicaicabbageTV-emby.png"}
+    {"name":"baicaicabbageTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/baicaicabbageTV-emby.png"},
+    {"name":"tufeide-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tufeide-emby.png"},
+    {"name":"tufeide(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tufeide(1)-emby.png"},
  ]
 }
+
 
 
