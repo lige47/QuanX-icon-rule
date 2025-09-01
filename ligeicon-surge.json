@@ -247,6 +247,7 @@
     {"name":"ChatGPT-green", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ChatGPT-green.png"}, 
     {"name":"chatgpt4.0", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chatgpt4.0.png"},
     {"name":"claude", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/claude.png"},
+    {"name":"claude(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/claude(1).png"},
     {"name":"Copilot", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Copilot.png"},
     {"name":"Copilot(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Copilot(1).png"},
     {"name":"gemini", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/gemini.png"},
@@ -654,3 +655,4 @@
     {"name":"TERO", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TERO.png"},
   ]
 }
+
