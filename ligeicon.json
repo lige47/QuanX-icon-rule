@@ -1,5 +1,5 @@
 {
-  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250901", 
+  "name":"离歌图标包", "description":"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为250902", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -395,6 +395,7 @@
     {"name":"roblox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/roblox.png"},
     {"name":"exhentai", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/exhentai.png"},
     {"name":"kakaotalk", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/kakaotalk.png"},
+    {"name":"kakaotalk(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/kakaotalk(1).png"},
     {"name":"linkedin", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/linkedin.png"},
     {"name":"proxmox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/proxmox.png"},
     {"name":"Sharon", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Sharon.png"},
@@ -655,4 +656,5 @@
     {"name":"TERO", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TERO.png"}
   ]
 }
+
 
