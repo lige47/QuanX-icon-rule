@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250831", 
+  "name":"TG频道@ligeicon 版本250902", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -395,6 +395,7 @@
     {"name":"roblox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/roblox.png"},
     {"name":"exhentai", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/exhentai.png"},
     {"name":"kakaotalk", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/kakaotalk.png"},
+    {"name":"kakaotalk(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/kakaotalk(1).png"},
     {"name":"linkedin", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/linkedin.png"},
     {"name":"proxmox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/proxmox.png"},
     {"name":"Sharon", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Sharon.png"},
@@ -655,4 +656,5 @@
     {"name":"TERO", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TERO.png"},
   ]
 }
+
 
