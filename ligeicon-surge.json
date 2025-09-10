@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250908", 
+  "name":"TG频道@ligeicon 版本250910", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -257,6 +257,7 @@
     {"name":"xianyu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/xianyu.png"},
     {"name":"yunshanfu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yunshanfu.png"},
     {"name":"zhangshanglol", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zhangshanglol.png"},
+    {"name":"wifiwannengyaoshi", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wifiwannengyaoshi.png"},
     {"name":"tiktok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok.png"},
     {"name":"tiktok(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok(1).png"},
     {"name":"tiktok(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/tiktok((2).png"}, 
@@ -674,8 +675,10 @@
     {"name":"DoriyaNetwork(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/DoriyaNetwork(1).png"},
     {"name":"TERO", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/TERO.png"},
     {"name":"superbiu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/superbiu.png"},
+    {"name":"yifenjichang", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yifenjichang.png"},
   ]
 }
+
 
 
 
