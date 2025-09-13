@@ -120,3 +120,10 @@ DOMAIN-SUFFIX,media-imdb.com
 DOMAIN-SUFFIX,okex.com
 DOMAIN-SUFFIX,oklink.com
 DOMAIN-SUFFIX,okx.com
+
+#speedtest
+  #SG
+  DOMAIN,speedtest.myrepublic.com.sg
+  DOMAIN,speedtest.singnet.com.sg
+  DOMAIN,speedtest10.vqbn.com
+  DOMAIN,m1speedtest1.m1net.com.sg
