@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250910", 
+  "name":"TG频道@ligeicon 版本250914", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Hongkong", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Hongkong.png"},
@@ -43,6 +43,7 @@
     {"name":"Australia(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Australia(2).png"},
     {"name":"Netherlands", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Netherlands.png"},
     {"name":"Netherlands(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Netherlands(1).png"},
+    {"name":"Netherlands(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Netherlands(2).png"},
     {"name":"NorthKorea", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/NorthKorea.png"},
     {"name":"NorthKorea(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/NorthKorea(1).png"},
     {"name":"NorthKorea(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/NorthKorea(2).png"},
@@ -680,6 +681,7 @@
     {"name":"yifenjichang", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yifenjichang.png"},
   ]
 }
+
 
 
 
