@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250924", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为250927", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -68,6 +68,8 @@
     {"name":"dpxniceduck-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dpxniceduck-emby.png"},
     {"name":"dvfilmupdating-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dvfilmupdating-emby.png"},
     {"name":"efu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/efu-emby.png"},
+    {"name":"emospg-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emospg-emby.png"},
+    {"name":"emospg(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emospg(1)-emby.png"},
     {"name":"epub", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/epub.png"},
     {"name":"erciyuan-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/erciyuan-emby.png"},
     {"name":"FaintRay-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/FaintRay-emby.png"},
@@ -135,6 +137,7 @@
     {"name":"MICU-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/MICU-emby.png"},
     {"name":"micu_cloud_media-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/micu_cloud_media-emby.png"},
     {"name":"MisakaF-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/MisakaF-emby.png"},
+    {"name":"misaya-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/misaya-emby.png"},
     {"name":"Misty-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Misty-emby.png"},
     {"name":"Misty(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Misty(1)-emby.png"},
     {"name":"mooguu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooguu-emby.png"},
@@ -267,6 +270,7 @@
     {"name":"zox(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox(2)-emby.png"}
  ]
 }
+
 
 
 
