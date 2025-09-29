@@ -1,5 +1,5 @@
 {
-  "name":"TG频道@ligeicon 版本250924", 
+  "name":"TG频道@ligeicon 版本250929", 
   "icons":[
     {"name":"lige", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/lige.png"},
     {"name":"Argentina", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Argentina.png"},
@@ -648,6 +648,7 @@
     {"name":"Vikinglinks(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Vikinglinks(2).png"},
     {"name":"vmssrNotice", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/vmssrNotice.png"},
     {"name":"vv", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/vv.png"},
+    {"name":"v2paw", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/v2paw.png"},
     {"name":"wanda", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wanda.png"},
     {"name":"wanda(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/wanda(1).png"},
     {"name":"westdata", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/westdata.png"},
@@ -680,6 +681,7 @@
     {"name":"yztcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yztcloud.png"},
   ]
 }
+
 
 
 
