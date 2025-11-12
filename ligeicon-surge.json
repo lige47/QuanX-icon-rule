@@ -221,6 +221,7 @@
     {"name":"quark", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/quark.png"},
     {"name":"reflix", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/reflix.png"},
     {"name":"senplayer", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/senplayer.png"},
+    {"name":"senplayer(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/senplayer(1).png"},
     {"name":"shengshenghuozhu", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shengshenghuozhu.png"},
     {"name":"shihuo", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shihuo.png"},
     {"name":"shunfeng", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/shunfeng.png"},
@@ -719,6 +720,7 @@
     {"name":"yztcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yztcloud.png"},
   ]
 }
+
 
 
 
