@@ -1,5 +1,5 @@
 {
-  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为251116", 
+  "name":"离歌emby专用", "description":"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为251117", 
   "icons":[
     {"name":"emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby.png"},
     {"name":"chinamobilemcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/chinamobilemcloud.png"},
@@ -158,6 +158,7 @@
     {"name":"Misty(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Misty(1)-emby.png"},
     {"name":"mooguu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooguu-emby.png"},
     {"name":"mooguu(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooguu(1)-emby.png"},
+    {"name":"mooguu(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooguu(2)-emby.png"},
     {"name":"mooncake-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/mooncake-emby.png"},
     {"name":"moyunge-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/moyunge-emby.png"},
     {"name":"Nanflix-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Nanflix-emby.png"},
@@ -287,6 +288,7 @@
     {"name":"zox(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox(2)-emby.png"}
  ]
 }
+
 
 
 
