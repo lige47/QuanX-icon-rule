@@ -21,16 +21,15 @@ jobs:
       - name: Update time in README
         id: date_step
         run: |
-          # 1. 获取时间 (格式修改为：2025年11月20日 23:52:45)
-          # 这样更符合你文案的风格
-          TIME=$(TZ='Asia/Shanghai' date +'%Y年%m月%d日 %H:%M:%S')
-          echo "UPDATE_TIME=$TIME" >> $GITHUB_ENV
+          # 生成中文格式时间 (用于 Telegram)
+          TIME_CN=$(TZ='Asia/Shanghai' date +'%Y年%m月%d日 %H:%M:%S')
+          echo "UPDATE_TIME_CN=$TIME_CN" >> $GITHUB_ENV
           
-          # 2. 同时也生成一个适合 README 的短时间格式
-          README_TIME=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          # 生成标准格式时间 (用于 README)
+          TIME_STD=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
           
           # 修改 README
-          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$README_TIME\n<!-- END_SECTION:update_time -->/g" README.md || true
+          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$TIME_STD\n<!-- END_SECTION:update_time -->/g" README.md || true
 
       - name: Commit changes
         run: |
@@ -44,19 +43,19 @@ jobs:
             echo "No changes to commit."
           fi
 
-      # 编辑 Telegram 消息
+      # 【完美修复版】使用 Python 发送请求，自动处理换行和符号
       - name: Edit Telegram Message
         env:
           TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHANNEL_ID }}
           TG_MSG_ID: ${{ secrets.TG_MESSAGE_ID }}
-          UPDATE_TIME: ${{ env.UPDATE_TIME }}
+          UPDATE_TIME: ${{ env.UPDATE_TIME_CN }}
           
-          # 👇👇👇 文案模板区域 👇👇👇
+          # 👇 文案模板 (在这里直接修改，所见即所得)
           MESSAGE_TEMPLATE: |
             <b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
             
-            图标排序为：国旗 代理软件logo 国内可直连软件图标 外网软件图标 无分类的图标 机场logo
+            图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
             
             复制以下图标库链接导入即可( 此图标包不包含Emby服图标，Emby图标请导入下面的那个)
             <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json</a>
@@ -83,18 +82,47 @@ jobs:
             有任何流量卡问题联系： @lige0407_bot
 
         run: |
-          # 替换模板中的 {time}
-          FINAL_TEXT=$(python3 -c "import os; print(os.environ['MESSAGE_TEMPLATE'].replace('{time}', os.environ['UPDATE_TIME']))")
-          
-          # 发送请求
-          curl -s -X POST "https://api.telegram.org/bot$TG_TOKEN/editMessageText" \
-            -H "Content-Type: application/json" \
-            -d @- <<EOF
-          {
-            "chat_id": "$TG_CHAT_ID",
-            "message_id": "$TG_MSG_ID",
-            "text": "$FINAL_TEXT",
-            "parse_mode": "HTML",
-            "disable_web_page_preview": true
+          python3 - <<EOF
+          import os
+          import json
+          import urllib.request
+
+          # 1. 获取环境变量
+          token = os.environ.get('TG_TOKEN')
+          chat_id = os.environ.get('TG_CHAT_ID')
+          msg_id = os.environ.get('TG_MSG_ID')
+          template = os.environ.get('MESSAGE_TEMPLATE')
+          time_str = os.environ.get('UPDATE_TIME')
+
+          if not all([token, chat_id, msg_id, template]):
+              print("Error: 缺少必要的环境变量")
+              exit(1)
+
+          # 2. 替换时间占位符
+          final_text = template.replace('{time}', time_str)
+
+          # 3. 构建 JSON 数据 (Python 会自动处理转义和换行，最安全)
+          data = {
+              "chat_id": chat_id,
+              "message_id": msg_id,
+              "text": final_text,
+              "parse_mode": "HTML",
+              "disable_web_page_preview": True
           }
+
+          # 4. 发送请求
+          url = f"https://api.telegram.org/bot{token}/editMessageText"
+          headers = {'Content-Type': 'application/json'}
+          
+          try:
+              req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='POST')
+              with urllib.request.urlopen(req) as response:
+                  print("✅ 消息编辑成功:", response.read().decode('utf-8'))
+          except urllib.error.HTTPError as e:
+              print(f"❌ 发送失败: {e.code} {e.reason}")
+              print(e.read().decode('utf-8'))
+              exit(1)
+          except Exception as e:
+              print(f"❌ 发生错误: {e}")
+              exit(1)
           EOF
