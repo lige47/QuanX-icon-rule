@@ -1,6 +1,6 @@
 # 请勿Fork！！请勿Fork！！请勿Fork！！
 ![Last Commit](https://img.shields.io/github/last-commit/lige47/QuanX-icon-rule?display_timestamp=author&label=最后更新&style=flat-square)
-[![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen.svg)]([https://t.me/v2rayn](https://t.me/ligeicon))
+[![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen?logo=telegram)](https://t.me/ligeicon)
 ### 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
 ## 图标库链接：
