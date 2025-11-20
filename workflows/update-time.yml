@@ -1,0 +1,54 @@
+name: Update Last Updated Time
+
+on:
+  # 1. 当 push 代码到 main 分支时触发 (如果你的主分支叫 master，请把下面的 main 改成 master)
+  push:
+    branches:
+      - main
+  # 2. 每天北京时间早上 8 点自动触发 (UTC时间 0点)
+  schedule:
+    - cron: '0 0 * * *'
+  # 3. 允许你手动点击按钮触发 (方便测试用)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      # 第一步：拉取代码
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 第二步：获取时间并修改 README
+      - name: Update time in README
+        run: |
+          # 设置时区为上海/北京时间，并获取当前时间
+          # 格式示例：2025-03-21 14:30:00
+          TIME=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          
+          # 打印一下时间，方便在日志里看
+          echo "Current time: $TIME"
+          
+          # 使用 sed 命令查找 README 中的占位符，并替换中间的内容
+          # 如果你想改文字内容，修改下面 "🕒 本项目最近更新于：" 这部分即可
+          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$TIME\n<!-- END_SECTION:update_time -->/g" README.md
+
+      # 第三步：提交更改 (这就是那个配置机器人的地方，不需要改)
+      - name: Commit changes
+        run: |
+          # 配置 Git 机器人信息
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # 检查文件是否有变化
+          if [[ -n $(git status -s) ]]; then
+            echo "Changes detected. Committing..."
+            git add README.md
+            git commit -m "docs: auto update last updated time [skip ci]"
+            git push
+          else
+            echo "No changes to commit."
+          fi
