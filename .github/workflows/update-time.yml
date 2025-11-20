@@ -1,14 +1,11 @@
 name: Update Last Updated Time
 
 on:
-  # 1. 当 push 代码到 main 分支时触发 (如果你的主分支叫 master，请把下面的 main 改成 master)
   push:
     branches:
       - main
-  # 2. 每天北京时间早上 8 点自动触发 (UTC时间 0点)
   schedule:
     - cron: '0 0 * * *'
-  # 3. 允许你手动点击按钮触发 (方便测试用)
   workflow_dispatch:
 
 permissions:
@@ -18,37 +15,86 @@ jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      # 第一步：拉取代码
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 第二步：获取时间并修改 README
       - name: Update time in README
+        id: date_step
         run: |
-          # 设置时区为上海/北京时间，并获取当前时间
-          # 格式示例：2025-03-21 14:30:00
-          TIME=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          # 1. 获取时间 (格式修改为：2025年11月20日 23:52:45)
+          # 这样更符合你文案的风格
+          TIME=$(TZ='Asia/Shanghai' date +'%Y年%m月%d日 %H:%M:%S')
+          echo "UPDATE_TIME=$TIME" >> $GITHUB_ENV
           
-          # 打印一下时间，方便在日志里看
-          echo "Current time: $TIME"
+          # 2. 同时也生成一个适合 README 的短时间格式
+          README_TIME=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
           
-          # 使用 sed 命令查找 README 中的占位符，并替换中间的内容
-          # 如果你想改文字内容，修改下面 "🕒 本项目最近更新于：" 这部分即可
-          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$TIME\n<!-- END_SECTION:update_time -->/g" README.md
+          # 修改 README
+          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$README_TIME\n<!-- END_SECTION:update_time -->/g" README.md || true
 
-      # 第三步：提交更改 (这就是那个配置机器人的地方，不需要改)
       - name: Commit changes
         run: |
-          # 配置 Git 机器人信息
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # 检查文件是否有变化
           if [[ -n $(git status -s) ]]; then
-            echo "Changes detected. Committing..."
             git add README.md
             git commit -m "docs: auto update last updated time [skip ci]"
             git push
           else
             echo "No changes to commit."
           fi
+
+      # 编辑 Telegram 消息
+      - name: Edit Telegram Message
+        env:
+          TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+          TG_CHAT_ID: ${{ secrets.TG_CHANNEL_ID }}
+          TG_MSG_ID: ${{ secrets.TG_MESSAGE_ID }}
+          UPDATE_TIME: ${{ env.UPDATE_TIME }}
+          
+          # 👇👇👇 文案模板区域 👇👇👇
+          MESSAGE_TEMPLATE: |
+            <b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
+            
+            图标排序为：国旗 代理软件logo 国内可直连软件图标 外网软件图标 无分类的图标 机场logo
+            
+            复制以下图标库链接导入即可( 此图标包不包含Emby服图标，Emby图标请导入下面的那个)
+            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json</a>
+            
+            <a href="https://quantumult.app/x/open-app/ui?module=gallery&type=icon&action=add&content=%5B%22https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json%22%5D">QuantumultX一键导入</a>
+            <a href="https://www.nsloon.com/openloon/import?iconset=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">Loon一键导入</a>
+            
+            Surge图标库链接：
+            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json</a>
+            
+            Emby图标库（只有Emby图标，建议 Fileball Senplayer Yamby Hills Forward 小幻影视 使用）
+            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json</a>
+            
+            本频道链接：<a href="https://t.me/ligeicon">https://t.me/ligeicon</a>   群组：<a href="https://t.me/ligeicon_group">https://t.me/ligeicon_group</a>
+            需要适配图标群内反馈即可。无偿适配！！！
+            
+            一些小的新增可能不会发频道，可以关注这个最近一次更新时间，来判断自己是不是最新的库。
+            Github地址：
+            <a href="https://github.com/lige47/QuanX-icon-rule">https://github.com/lige47/QuanX-icon-rule</a>
+            最近一次更新时间为：{time}  目前图标数为986个！版本号 251120
+            
+            自营正规流量卡：
+            <a href="https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9">189卡业</a>  <a href="https://h5.gantanhao.com/url?value=pVC7v1759672595456">卡业联盟</a>
+            有任何流量卡问题联系： @lige0407_bot
+
+        run: |
+          # 替换模板中的 {time}
+          FINAL_TEXT=$(python3 -c "import os; print(os.environ['MESSAGE_TEMPLATE'].replace('{time}', os.environ['UPDATE_TIME']))")
+          
+          # 发送请求
+          curl -s -X POST "https://api.telegram.org/bot$TG_TOKEN/editMessageText" \
+            -H "Content-Type: application/json" \
+            -d @- <<EOF
+          {
+            "chat_id": "$TG_CHAT_ID",
+            "message_id": "$TG_MSG_ID",
+            "text": "$FINAL_TEXT",
+            "parse_mode": "HTML",
+            "disable_web_page_preview": true
+          }
+          EOF
