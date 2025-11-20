@@ -18,17 +18,29 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Update time in README
-        id: date_step
+      - name: Calculate Data & Update README
+        id: data_step
         run: |
-          # 生成中文格式时间 (用于 Telegram)
+          # 1. 获取时间 (中文格式用于 Telegram)
           TIME_CN=$(TZ='Asia/Shanghai' date +'%Y年%m月%d日 %H:%M:%S')
           echo "UPDATE_TIME_CN=$TIME_CN" >> $GITHUB_ENV
           
-          # 生成标准格式时间 (用于 README)
+          # 2. 获取时间 (标准格式用于 README)
           TIME_STD=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
           
-          # 修改 README
+          # 3. 【新增】统计 icon 文件夹下 png 图片数量
+          # 如果文件夹不存在，默认为 0
+          if [ -d "icon" ]; then
+            ICON_COUNT=$(find icon -type f -name "*.png" | wc -l)
+          else
+            ICON_COUNT=0
+          fi
+          # 去除可能存在的空格
+          ICON_COUNT=$(echo $ICON_COUNT | xargs)
+          echo "Current Icon Count: $ICON_COUNT"
+          echo "ICON_COUNT=$ICON_COUNT" >> $GITHUB_ENV
+
+          # 4. 修改 README
           sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$TIME_STD\n<!-- END_SECTION:update_time -->/g" README.md || true
 
       - name: Commit changes
@@ -37,21 +49,22 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if [[ -n $(git status -s) ]]; then
             git add README.md
-            git commit -m "docs: auto update last updated time [skip ci]"
+            git commit -m "docs: auto update time and stats [skip ci]"
             git push
           else
             echo "No changes to commit."
           fi
 
-      # 【完美修复版】使用 Python 发送请求，自动处理换行和符号
+      # 使用 Python 发送请求
       - name: Edit Telegram Message
         env:
           TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_CHAT_ID: ${{ secrets.TG_CHANNEL_ID }}
           TG_MSG_ID: ${{ secrets.TG_MESSAGE_ID }}
           UPDATE_TIME: ${{ env.UPDATE_TIME_CN }}
+          ICON_COUNT: ${{ env.ICON_COUNT }}
           
-          # 👇 文案模板 (在这里直接修改，所见即所得)
+          # 👇 文案模板 (注意看倒数第三行，我把数字改成 {count} 了)
           MESSAGE_TEMPLATE: |
             <b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
             
@@ -75,7 +88,7 @@ jobs:
             一些小的新增可能不会发频道，可以关注这个最近一次更新时间，来判断自己是不是最新的库。
             Github地址：
             <a href="https://github.com/lige47/QuanX-icon-rule">https://github.com/lige47/QuanX-icon-rule</a>
-            最近一次更新时间为：{time}  目前图标数为986个！版本号 251120
+            最近一次更新时间为：{time}  目前图标数为{count}个！版本号 251120
             
             自营正规流量卡：
             <a href="https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9">189卡业</a>  <a href="https://h5.gantanhao.com/url?value=pVC7v1759672595456">卡业联盟</a>
@@ -93,15 +106,17 @@ jobs:
           msg_id = os.environ.get('TG_MSG_ID')
           template = os.environ.get('MESSAGE_TEMPLATE')
           time_str = os.environ.get('UPDATE_TIME')
+          count_str = os.environ.get('ICON_COUNT')
 
           if not all([token, chat_id, msg_id, template]):
               print("Error: 缺少必要的环境变量")
               exit(1)
 
-          # 2. 替换时间占位符
-          final_text = template.replace('{time}', time_str)
+          # 2. 替换时间占位符 和 数量占位符
+          # 这里的逻辑是：先把 {time} 换掉，再把 {count} 换掉
+          final_text = template.replace('{time}', time_str).replace('{count}', count_str)
 
-          # 3. 构建 JSON 数据 (Python 会自动处理转义和换行，最安全)
+          # 3. 构建 JSON 数据
           data = {
               "chat_id": chat_id,
               "message_id": msg_id,
