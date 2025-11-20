@@ -1,5 +1,6 @@
 # 请勿Fork！！请勿Fork！！请勿Fork！！
-# 更新日期：2025年11月20日
+![Last Commit](https://img.shields.io/github/last-commit/lige47/QuanX-icon-rule?display_timestamp=author&label=最后更新&style=flat-square)
+
 TG频道：https://t.me/ligeicon   有需要适配的图标可以在频道内反馈
 ### 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
