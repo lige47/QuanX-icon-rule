@@ -330,6 +330,7 @@
     {"name":"disney(black)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/disney(black).png"},
     {"name":"disney(blue)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/disney(blue).png"},
     {"name":"disney", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/disney.png"},
+    {"name":"disney(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/disney(1).png"},
     {"name":"Drafts", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/Drafts.png"},
     {"name":"dropbox", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dropbox.png"},
     {"name":"dropbox(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/dropbox(1).png"},
@@ -356,6 +357,7 @@
     {"name":"grok", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/grok.png"},
     {"name":"HBO", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/HBO.png"},
     {"name":"HBOmax", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/HBOmax.png"},
+    {"name":"HBOmax(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/HBOmax(1).png"},
     {"name":"max", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/max.png"},
     {"name":"max(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/max(1).png"},
     {"name":"max(2)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/max(2).png"},
@@ -731,6 +733,7 @@
     {"name":"yztcloud", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/yztcloud.png"}
   ]
 }
+
 
 
 
