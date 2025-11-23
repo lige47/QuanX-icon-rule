@@ -18,7 +18,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # 🟢 第一步：计算数据并修改 README (使用 Python 完美解决多行替换问题)
+      # 🟢 第一步：计算数据并修改 README (修复乱码版)
       - name: Calculate Data & Update README
         id: update_step
         run: |
@@ -45,27 +45,33 @@ jobs:
           
           print(f"📊 统计结果: 时间={time_std}, 图标数={icon_count}")
 
-          # 3. 将变量写入 Github Environment (给下一步发消息用)
+          # 3. 将变量写入 Github Environment
           with open(os.environ['GITHUB_ENV'], 'a') as f:
               f.write(f"UPDATE_TIME_CN={time_cn}\n")
               f.write(f"ICON_COUNT={icon_count}\n")
 
-          # 4. 修改 README.md (核心修复部分)
+          # 4. 修改 README.md (乱码修复逻辑)
           try:
+              # 定义标签常量
+              START_TAG = "<!-- START_SECTION:update_time -->"
+              END_TAG = "<!-- END_SECTION:update_time -->"
+              
               with open('README.md', 'r', encoding='utf-8') as f:
                   content = f.read()
               
-              # 正则表达式：匹配 START 和 END 标签之间的所有内容 (re.DOTALL 支持跨行)
-              pattern = r'(<!-- START_SECTION:update_time -->)(.*?)(<!-- END_SECTION:update_time -->)'
-              # 替换内容
-              replacement = f'\\1\n🕒 本项目最近更新于：{time_std}\n\\3'
+              # 正则：匹配标签及其中间的所有内容
+              # 注意：这里我们手动拼接 regex，确保精准匹配
+              pattern = f"{re.escape(START_TAG)}.*?{re.escape(END_TAG)}"
+              
+              # 新的内容：直接使用干净的标签和换行符，不复用旧内容
+              new_block = f"{START_TAG}\n🕒 本项目最近更新于：{time_std}\n{END_TAG}"
               
               # 执行替换
-              new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+              new_content = re.sub(pattern, new_block, content, flags=re.DOTALL)
               
               with open('README.md', 'w', encoding='utf-8') as f:
                   f.write(new_content)
-              print("✅ README 修改逻辑执行完毕")
+              print("✅ README 修改成功 (已重置标签和编码)")
               
           except Exception as e:
               print(f"❌ 修改 README 失败: {e}")
@@ -78,14 +84,13 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          # 检查是否有变化
           if [[ -n $(git status -s) ]]; then
             git add README.md
-            git commit -m "docs: auto update time and stats [skip ci]"
+            git commit -m "docs: fix encoding and update time [skip ci]"
             git push
             echo "🎉 成功推送到 GitHub"
           else
-            echo "⚠️ 没有检测到文件变化 (可能是时间未变)"
+            echo "⚠️ 没有文件变化"
           fi
 
       # 🟢 第三步：编辑 Telegram 消息
