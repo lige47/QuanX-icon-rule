@@ -18,44 +18,77 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 🟢 第一步：计算数据并修改 README (使用 Python 完美解决多行替换问题)
       - name: Calculate Data & Update README
-        id: data_step
+        id: update_step
         run: |
-          # 1. 获取时间 (中文格式用于 Telegram)
-          TIME_CN=$(TZ='Asia/Shanghai' date +'%Y年%m月%d日 %H:%M:%S')
-          echo "UPDATE_TIME_CN=$TIME_CN" >> $GITHUB_ENV
+          python3 - <<EOF
+          import os
+          import re
+          import datetime
           
-          # 2. 获取时间 (标准格式用于 README)
-          TIME_STD=$(TZ='Asia/Shanghai' date +'%Y-%m-%d %H:%M:%S')
+          # 1. 设置时区 (UTC+8)
+          tz_offset = datetime.timedelta(hours=8)
+          now = datetime.datetime.now(datetime.timezone.utc) + tz_offset
           
-          # 3. 【新增】统计 icon 文件夹下 png 图片数量
-          # 如果文件夹不存在，默认为 0
-          if [ -d "icon" ]; then
-            ICON_COUNT=$(find icon -type f -name "*.png" | wc -l)
-          else
-            ICON_COUNT=0
-          fi
-          # 去除可能存在的空格
-          ICON_COUNT=$(echo $ICON_COUNT | xargs)
-          echo "Current Icon Count: $ICON_COUNT"
-          echo "ICON_COUNT=$ICON_COUNT" >> $GITHUB_ENV
+          # 生成两种格式的时间
+          time_cn = now.strftime('%Y年%m月%d日 %H:%M:%S') # 给 Telegram 用
+          time_std = now.strftime('%Y-%m-%d %H:%M:%S')   # 给 README 用
 
-          # 4. 修改 README
-          sed -i "s/<!-- START_SECTION:update_time -->.*<!-- END_SECTION:update_time -->/<!-- START_SECTION:update_time -->\n🕒 本项目最近更新于：$TIME_STD\n<!-- END_SECTION:update_time -->/g" README.md || true
+          # 2. 统计 Icon 数量
+          icon_count = 0
+          if os.path.exists("icon"):
+              for root, dirs, files in os.walk("icon"):
+                  for file in files:
+                      if file.lower().endswith(".png"):
+                          icon_count += 1
+          
+          print(f"📊 统计结果: 时间={time_std}, 图标数={icon_count}")
 
+          # 3. 将变量写入 Github Environment (给下一步发消息用)
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write(f"UPDATE_TIME_CN={time_cn}\n")
+              f.write(f"ICON_COUNT={icon_count}\n")
+
+          # 4. 修改 README.md (核心修复部分)
+          try:
+              with open('README.md', 'r', encoding='utf-8') as f:
+                  content = f.read()
+              
+              # 正则表达式：匹配 START 和 END 标签之间的所有内容 (re.DOTALL 支持跨行)
+              pattern = r'(<!-- START_SECTION:update_time -->)(.*?)(<!-- END_SECTION:update_time -->)'
+              # 替换内容
+              replacement = f'\\1\n🕒 本项目最近更新于：{time_std}\n\\3'
+              
+              # 执行替换
+              new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+              
+              with open('README.md', 'w', encoding='utf-8') as f:
+                  f.write(new_content)
+              print("✅ README 修改逻辑执行完毕")
+              
+          except Exception as e:
+              print(f"❌ 修改 README 失败: {e}")
+              exit(1)
+          EOF
+
+      # 🟢 第二步：提交更改
       - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # 检查是否有变化
           if [[ -n $(git status -s) ]]; then
             git add README.md
             git commit -m "docs: auto update time and stats [skip ci]"
             git push
+            echo "🎉 成功推送到 GitHub"
           else
-            echo "No changes to commit."
+            echo "⚠️ 没有检测到文件变化 (可能是时间未变)"
           fi
 
-      # 使用 Python 发送请求
+      # 🟢 第三步：编辑 Telegram 消息
       - name: Edit Telegram Message
         env:
           TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
@@ -64,7 +97,7 @@ jobs:
           UPDATE_TIME: ${{ env.UPDATE_TIME_CN }}
           ICON_COUNT: ${{ env.ICON_COUNT }}
           
-          # 👇 文案模板 (注意看倒数第三行，我把数字改成 {count} 了)
+          # 👇 文案模板
           MESSAGE_TEMPLATE: |
             <b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
             
@@ -100,7 +133,6 @@ jobs:
           import json
           import urllib.request
 
-          # 1. 获取环境变量
           token = os.environ.get('TG_TOKEN')
           chat_id = os.environ.get('TG_CHAT_ID')
           msg_id = os.environ.get('TG_MSG_ID')
@@ -112,11 +144,8 @@ jobs:
               print("Error: 缺少必要的环境变量")
               exit(1)
 
-          # 2. 替换时间占位符 和 数量占位符
-          # 这里的逻辑是：先把 {time} 换掉，再把 {count} 换掉
           final_text = template.replace('{time}', time_str).replace('{count}', count_str)
 
-          # 3. 构建 JSON 数据
           data = {
               "chat_id": chat_id,
               "message_id": msg_id,
@@ -125,7 +154,6 @@ jobs:
               "disable_web_page_preview": True
           }
 
-          # 4. 发送请求
           url = f"https://api.telegram.org/bot{token}/editMessageText"
           headers = {'Content-Type': 'application/json'}
           
@@ -133,11 +161,7 @@ jobs:
               req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='POST')
               with urllib.request.urlopen(req) as response:
                   print("✅ 消息编辑成功:", response.read().decode('utf-8'))
-          except urllib.error.HTTPError as e:
-              print(f"❌ 发送失败: {e.code} {e.reason}")
-              print(e.read().decode('utf-8'))
-              exit(1)
           except Exception as e:
-              print(f"❌ 发生错误: {e}")
+              print(f"❌ 发送失败: {e}")
               exit(1)
           EOF
