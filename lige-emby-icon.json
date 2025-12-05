@@ -30,15 +30,15 @@
     {"name":"1111-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/1111-emby.png"},
     {"name":"1111(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/1111(1)-emby.png"},
     {"name":"1111niceduck-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/1111niceduck-emby.png"},
-    {"name":"9club-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/9club-emby.png"},
-    {"name":"aczn-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/aczn-emby.png"},
-    {"name":"afree-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/afree-emby.png"},
-    {"name":"ai-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ai-emby.png"},
-    {"name":"AlphaTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV-emby.png"},
-    {"name":"AlphaTV(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(1)-emby.png"},
-    {"name":"AlphaTV(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(2)-emby.png"},
-    {"name":"AlphaTV(3)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(3)-emby.png"},
-    {"name":"AlphaTV(4)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AlphaTV(4)-emby.png"},
+    {"name":"9club-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/9club-emby.png"},
+    {"name":"aczn-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/aczn-emby.png"},
+    {"name":"afree-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/afree-emby.png"},
+    {"name":"ai-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/ai-emby.png"},
+    {"name":"AlphaTV-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV-emby.png"},
+    {"name":"AlphaTV(1)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(1)-emby.png"},
+    {"name":"AlphaTV(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(2)-emby.png"},
+    {"name":"AlphaTV(3)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(3)-emby.png"},
+    {"name":"AlphaTV(4)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(4)-emby.png"},
     {"name":"anisaga-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anisaga-emby.png"},
     {"name":"anran-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anran-emby.png"},
     {"name":"anquanwu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anquanwu-emby.png"},
@@ -302,6 +302,7 @@
     {"name":"zox(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox(2)-emby.png"}
  ]
 }
+
 
 
 
