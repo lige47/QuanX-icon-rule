@@ -39,12 +39,12 @@
     {"name":"AlphaTV(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(2)-emby.png"},
     {"name":"AlphaTV(3)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(3)-emby.png"},
     {"name":"AlphaTV(4)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(4)-emby.png"},
-    {"name":"anisaga-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anisaga-emby.png"},
-    {"name":"anran-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anran-emby.png"},
-    {"name":"anquanwu-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/anquanwu-emby.png"},
-    {"name":"apop-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/apop-emby.png"},
-    {"name":"ash-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/ash-emby.png"},
-    {"name":"askUniversal-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/askUniversal-emby.png"},
+    {"name":"anisaga-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anisaga-emby.png"},
+    {"name":"anran-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anran-emby.png"},
+    {"name":"anquanwu-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anquanwu-emby.png"},
+    {"name":"apop-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/apop-emby.png"},
+    {"name":"ash-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/ash-emby.png"},
+    {"name":"askUniversal-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/askUniversal-emby.png"},
     {"name":"AuroraMedia-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AuroraMedia-emby.png"},
     {"name":"AuroraMedia-emby(1)", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/AuroraMedia-emby(1).png"},
     {"name":"awa-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/awa-emby.png"},
@@ -302,6 +302,7 @@
     {"name":"zox(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox(2)-emby.png"}
  ]
 }
+
 
 
 
