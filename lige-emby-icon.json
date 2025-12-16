@@ -40,8 +40,8 @@
     {"name":"AlphaTV(3)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(3)-emby.png"},
     {"name":"AlphaTV(4)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/AlphaTV(4)-emby.png"},
     {"name":"anisaga-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anisaga-emby.png"},
-    {"name":"anran-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anran-emby.png"},
     {"name":"anquanwu-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anquanwu-emby.png"},
+    {"name":"anran-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/anran-emby.png"},
     {"name":"apop-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/apop-emby.png"},
     {"name":"ash-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/ash-emby.png"},
     {"name":"askUniversal-emby", "url":"https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/askUniversal-emby.png"},
@@ -305,6 +305,7 @@
     {"name":"zox(2)-emby", "url":"https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/zox(2)-emby.png"}
  ]
 }
+
 
 
 
