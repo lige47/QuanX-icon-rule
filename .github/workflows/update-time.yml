@@ -3,11 +3,11 @@ name: Update Icons and README Time
 on:
   push:
     paths:
-      - 'icon/**'           # 监测图片变动
-  workflow_dispatch:         # 允许手动触发
+      - 'icon/**'
+  workflow_dispatch:
 
 permissions:
-  contents: write           # 赋予写入权限
+  contents: write
 
 jobs:
   build:
@@ -21,37 +21,74 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 1. 运行 Python 脚本生成新的 lige-emby-icon.json
-      - name: Run Update Script
+      # 🟢 第一步：运行存放在 scripts 下的图标 JSON 生成脚本
+      - name: Run Update Icons Script
         run: python scripts/update_icons.py
 
-      # 2. 更新 README 时间 (这是你之前的代码逻辑)
-      - name: Update README Time
+      # 🟢 第二步：计算数据并修改 README (使用你提供的 Python 逻辑)
+      - name: Calculate Data & Update README
+        id: update_step
+        shell: python
         run: |
-          current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
-          sed -i "s/最后更新时间：.*/最后更新时间：$current_time/g" README.md
+          import os
+          import re
+          import json
+          from datetime import datetime, timedelta
 
-      # 3. 提交变动到 GitHub (包括 JSON 和 README)
+          # 1. 计算北京时间
+          now_utc = datetime.utcnow()
+          now_beijing = now_utc + timedelta(hours=8)
+          time_std = now_beijing.strftime('%Y-%m-%d %H:%M:%S')
+          time_cn = now_beijing.strftime('%Y年%m月%d日 %H:%M:%S')
+
+          # 2. 读取 JSON 获取图标总数
+          icon_count = 0
+          try:
+              with open('lige-emby-icon.json', 'r', encoding='utf-8') as f:
+                  data = json.load(f)
+                  icon_count = len(data.get('icons', []))
+          except Exception as e:
+              print(f"读取图标数失败: {e}")
+
+          # 3. 写入 Github Environment
+          with open(os.environ['GITHUB_ENV'], 'a') as f:
+              f.write(f"UPDATE_TIME_CN={time_cn}\n")
+              f.write(f"ICON_COUNT={icon_count}\n")
+
+          # 4. 修改 README.md
+          try:
+              with open('README.md', 'r', encoding='utf-8') as f:
+                  content = f.read()
+              pattern = r'()(.*?)()'
+              replacement = f'\\1\n🕒 本项目最近更新于：{time_std} (共计 {icon_count} 个图标)\n\\3'
+              new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+              with open('README.md', 'w', encoding='utf-8') as f:
+                  f.write(new_content)
+          except Exception as e:
+              print(f"❌ 修改 README 失败: {e}")
+
+      # 🟢 第三步：推送变动到 GitHub
       - name: Commit and Push
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and time [skip ci]" && git push)
+          if [[ -n $(git status -s) ]]; then
+            git commit -m "docs: auto update time and stats [skip ci]"
+            git push
+          fi
 
-      # 4. 修改 TG 消息的最后更新时间 (请确保你仓库的 Secrets 里有这两个变量)
+      # 🟢 第四步：编辑 Telegram 消息
       - name: Update Telegram Message
         run: |
-          # 这里使用你之前的 TG 更新方案
-          # 如果你之前是用 curl 调用接口，代码如下：
           TOKEN="${{ secrets.TG_BOT_TOKEN }}"
-          CHAT_ID="${{ secrets.TG_CHAT_ID }}"
-          MSG_ID="这里填你之前那个消息的ID" 
+          CHAT_ID="@ligeicon" # 你的频道 ID
+          MSG_ID="91"         # 你提供的消息链接中的 ID
           
-          current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
-          # 构建发送的消息内容
-          TEXT="离歌图标库已更新%0A最后更新时间：${current_time}"
+          # 构建发送内容
+          TEXT="离歌图标库已更新%0A🕒 更新时间：${{ env.UPDATE_TIME_CN }}%0A📦 图标总数：${{ env.ICON_COUNT }} 个"
           
+          # 执行修改
           curl -s -X POST "https://api.telegram.org/bot$TOKEN/editMessageText" \
             -d "chat_id=$CHAT_ID" \
             -d "message_id=$MSG_ID" \
