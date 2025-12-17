@@ -1,4 +1,4 @@
-name: Update Icons and README Time
+name: Update Icons and Time
 
 on:
   push:
@@ -21,113 +21,14 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 🟢 第一步：运行图标生成脚本
-      - name: Run Update Icons Script
-        run: python scripts/update_icons.py
-
-      # 🟢 第二步：使用 Python 统一处理 README 和 TG 消息
-      - name: Calculate Data, Update README & TG
-        id: update_step
+      - name: Run Update Script
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-        shell: python
-        run: |
-          import os
-          import re
-          import json
-          import urllib.parse
-          import urllib.request
-          from datetime import datetime, timedelta
+        run: python scripts/update_icons.py
 
-          # 1. 计算时间 (北京时间)
-          now_beijing = datetime.utcnow() + timedelta(hours=8)
-          time_std = now_beijing.strftime('%Y-%m-%d %H:%M:%S')
-          time_cn = now_beijing.strftime('%Y年%m月%d日 %H:%M:%S')
-
-          # 2. 读取最新生成的图标总数
-          icon_count = 0
-          try:
-              with open('lige-emby-icon.json', 'r', encoding='utf-8') as f:
-                  data = json.load(f)
-                  icon_count = len(data.get('icons', []))
-          except: pass
-
-          # 3. 修改 README.md (解决重复行问题)
-          try:
-              with open('README.md', 'r', encoding='utf-8') as f:
-                  content = f.read()
-              
-              new_line = f"🕒 本项目最近更新于：{time_std} (共计 {icon_count} 个图标)"
-              
-              # 【防呆逻辑】先删掉所有已存在的更新时间行（清理之前报错产生的重复行）
-              content = re.sub(r"🕒 本项目最近更新于：.*?\n?", "", content)
-              # 在“项目简介”这四个字前面插入新的一行
-              content = content.replace("项目简介", f"{new_line}\n项目简介", 1)
-              
-              with open('README.md', 'w', encoding='utf-8') as f:
-                  f.write(content)
-              print("✅ README 清理并更新成功")
-          except Exception as e:
-              print(f"❌ README 修改失败: {e}")
-
-          # 4. 修改 Telegram 消息 (使用你提供的完整模板)
-          token = os.environ.get('TG_BOT_TOKEN')
-          chat_id = "@ligeicon"
-          msg_id = "91"
-          
-          # 这里是你提供的完整原始消息模板，中间用 {time_cn} 和 {icon_count} 占位
-          tg_template = """为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。
-
-图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
-
-复制以下图标库链接导入即可( 此图标包不包含Emby服图标，Emby图标请导入下面的那个)
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
-
-QuantumultX一键导入 (https://quantumult.app/x/open-app/ui?module=gallery&type=icon&action=add&content=%5B%22https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json%22%5D)
-Loon一键导入 (https://www.nsloon.com/openloon/import?iconset=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json)
-
-Surge图标库链接：
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json
-
-Emby图标库（只有Emby图标，建议 Fileball Senplayer Yamby Hills Forward 小幻影视 使用）
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json
-
-本频道链接：https://t.me/ligeicon    群组：https://t.me/ligeicon_group
-需要适配图标群内反馈即可。无偿适配！！！
-
-一些小的新增可能不会发频道，可以关注这个最近一次更新时间，来判断自己是不是最新的库。
-Github地址：
-https://github.com/lige47/QuanX-icon-rule
-最近一次更新时间为：{time_cn}  目前图标数为{icon_count}个！
-
-自营正规流量卡：
-189卡业 (https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9)  卡业联盟 (https://h5.gantanhao.com/url?value=pVC7v1759672595456)
-有任何流量卡问题联系： @lige0407_bot"""
-
-          final_text = tg_template.format(time_cn=time_cn, icon_count=icon_count)
-
-          try:
-              url = f"https://api.telegram.org/bot{token}/editMessageText"
-              params = urllib.parse.urlencode({
-                  "chat_id": chat_id,
-                  "message_id": msg_id,
-                  "text": final_text,
-                  "disable_web_page_preview": "true" # 保持消息整洁，不生成一堆网页预览
-              }).encode("utf-8")
-              
-              req = urllib.request.Request(url, data=params)
-              with urllib.request.urlopen(req) as response:
-                  print(f"✅ TG 消息更新成功: {response.read().decode()}")
-          except Exception as e:
-              print(f"❌ TG 消息更新失败: {e}")
-
-      # 🟢 第三步：推送变动到 GitHub
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          if [[ -n $(git status -s) ]]; then
-            git commit -m "auto: cleanup and update stats [skip ci]"
-            git push
-          fi
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and docs [skip ci]" && git push)
