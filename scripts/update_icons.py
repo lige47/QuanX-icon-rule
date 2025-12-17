@@ -2,12 +2,12 @@ import os
 import json
 from datetime import datetime
 
-# 路径配置（注意：这里是相对于仓库根目录的路径）
+# 配置路径（相对于仓库根目录）
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/icon/emby/"
 ICON_DIR = "icon/emby"
 JSON_FILE = "lige-emby-icon.json"
 
-# 你图片中确认的 26 个固定图标顺序
+# 严格按照你图片中的 26 个固定顺序排位
 FIXED_ORDER = [
     "emby", "chinamobilemcloud", "189", "chinaunicomcloud", "123", "115", 
     "quark", "alicloud", "alidrive", "baidunetdisk", "baidunetdisk(1)", 
@@ -21,13 +21,13 @@ def update_json():
         print(f"错误: 找不到目录 {ICON_DIR}")
         return
 
-    # 1. 读取所有图片名
+    # 1. 获取所有图片
     files = [f for f in os.listdir(ICON_DIR) if f.lower().endswith('.png')]
     all_names_map = {os.path.splitext(f)[0]: f for f in files}
 
     final_icons = []
     
-    # 2. 逻辑 A：填充固定部分
+    # 2. 填充固定部分
     for name in FIXED_ORDER:
         if name in all_names_map:
             final_icons.append({
@@ -36,7 +36,7 @@ def update_json():
             })
             del all_names_map[name]
 
-    # 3. 逻辑 B：剩余部分首字母排序
+    # 3. 剩余部分首字母排序
     remaining_icons = []
     for name, filename in all_names_map.items():
         remaining_icons.append({
@@ -47,21 +47,23 @@ def update_json():
     
     final_icons.extend(remaining_icons)
 
-    # 4. 组装 JSON (匹配你提供的图片格式)
+    # 4. 生成 JSON 数据
+    # 自动获取当前日期，格式为 YYMMDD (例如 251217)
     today_str = datetime.now().strftime("%y%m%d")
+    
     data = {
         "name": "离歌emby专用",
         "description": f"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为{today_str}",
         "icons": final_icons
     }
 
-    # 5. 写入并处理转义斜杠
+    # 5. 写入文件并处理转义斜杠 \/
     with open(JSON_FILE, 'w', encoding='utf-8') as jf:
         content = json.dumps(data, indent=2, ensure_ascii=False)
         content = content.replace("/", "\\/")
         jf.write(content)
 
-    print(f"成功更新 {JSON_FILE}，总图标数：{len(final_icons)}")
+    print(f"✅ 成功更新 {JSON_FILE}，包含 {len(final_icons)} 个图标。")
 
 if __name__ == "__main__":
     update_json()
