@@ -7,7 +7,7 @@ on:
   workflow_dispatch:         # 允许手动触发
 
 permissions:
-  contents: write           # 允许写入仓库
+  contents: write           # 赋予写入权限
 
 jobs:
   build:
@@ -21,20 +21,38 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 步骤 1：只运行 Python 脚本生成 JSON
+      # 1. 运行 Python 脚本生成新的 lige-emby-icon.json
       - name: Run Update Script
         run: python scripts/update_icons.py
 
-      # 步骤 2：更新 README 时间
+      # 2. 更新 README 时间 (这是你之前的代码逻辑)
       - name: Update README Time
         run: |
           current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
           sed -i "s/最后更新时间：.*/最后更新时间：$current_time/g" README.md
 
-      # 步骤 3：提交变动
+      # 3. 提交变动到 GitHub (包括 JSON 和 README)
       - name: Commit and Push
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and time [skip ci]" && git push)
+
+      # 4. 修改 TG 消息的最后更新时间 (请确保你仓库的 Secrets 里有这两个变量)
+      - name: Update Telegram Message
+        run: |
+          # 这里使用你之前的 TG 更新方案
+          # 如果你之前是用 curl 调用接口，代码如下：
+          TOKEN="${{ secrets.TG_BOT_TOKEN }}"
+          CHAT_ID="${{ secrets.TG_CHAT_ID }}"
+          MSG_ID="这里填你之前那个消息的ID" 
+          
+          current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
+          # 构建发送的消息内容
+          TEXT="离歌图标库已更新%0A最后更新时间：${current_time}"
+          
+          curl -s -X POST "https://api.telegram.org/bot$TOKEN/editMessageText" \
+            -d "chat_id=$CHAT_ID" \
+            -d "message_id=$MSG_ID" \
+            -d "text=$TEXT"
