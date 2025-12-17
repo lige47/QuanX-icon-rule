@@ -1,18 +1,17 @@
 import os
 import json
-from datetime import datetime
+import re
+import urllib.parse
+import urllib.request
+from datetime import datetime, timedelta
 
 # === 配置区 ===
-# 1. 文件夹路径
-ROOT_ICON_DIR = "icon"       # 存放固定 26 个图标的根目录
-EMBY_ICON_DIR = "icon/emby"  # 存放新增图标的子目录
-
-# 2. 基础 URL
+ROOT_ICON_DIR = "icon"
+EMBY_ICON_DIR = "icon/emby"
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
 JSON_FILE = "lige-emby-icon.json"
 
-# === 核心：绝对固定的 26 个图标数据 ===
-# 脚本会直接在 JSON 开头生成这些条目，链接指向 icon 根目录
+# 固定的 26 个图标
 FIXED_ICONS = [
     "emby", "chinamobilemcloud", "189", "chinaunicomcloud", "123", "115", 
     "quark", "alicloud", "alidrive", "baidunetdisk", "baidunetdisk(1)", 
@@ -21,52 +20,91 @@ FIXED_ICONS = [
     "xiaohuanRodelPlayer", "NAS", "NAS(1)", "NAS(2)", "qunhuiguanjia"
 ]
 
-def update_json():
+def update_all():
+    # --- 1. 生成 JSON ---
     final_icons = []
-    
-    # 1. 强制生成 26 个固定列表条目（路径指向 icon/）
     for name in FIXED_ICONS:
-        final_icons.append({
-            "name": name,
-            "url": f"{BASE_URL}{ROOT_ICON_DIR}/{name}.png"
-        })
+        final_icons.append({"name": name, "url": f"{BASE_URL}{ROOT_ICON_DIR}/{name}.png"})
 
-    # 2. 仅扫描 icon/emby 文件夹，寻找“额外”需要排序的图标
     if os.path.exists(EMBY_ICON_DIR):
-        # 获取 emby 子文件夹下所有 png 文件名（不带后缀）
         extra_files = [os.path.splitext(f)[0] for f in os.listdir(EMBY_ICON_DIR) if f.lower().endswith('.png')]
-        
-        # 3. 对额外图标进行首字母 A-Z 排序（忽略大小写）
         extra_files.sort(key=lambda x: x.lower())
-        
-        # 4. 将排序后的额外图标添加到列表末尾（路径指向 icon/emby/）
         for name in extra_files:
-            # 排除掉可能在固定名单中已经存在的文件名，防止重复显示
             if name not in FIXED_ICONS:
-                final_icons.append({
-                    "name": name,
-                    "url": f"{BASE_URL}{EMBY_ICON_DIR}/{name}.png"
-                })
+                final_icons.append({"name": name, "url": f"{BASE_URL}{EMBY_ICON_DIR}/{name}.png"})
 
-    # 5. 构造符合你要求的 JSON 对象结构
-    today_str = datetime.now().strftime("%y%m%d")
+    today_beijing = datetime.utcnow() + timedelta(hours=8)
+    time_std = today_beijing.strftime('%Y-%m-%d %H:%M:%S')
+    time_cn = today_beijing.strftime('%Y年%m月%d日 %H:%M:%S')
+    icon_count = len(final_icons)
+
     data = {
         "name": "离歌emby专用",
-        "description": f"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为{today_str}",
+        "description": f"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为{today_beijing.strftime('%y%m%d')}",
         "icons": final_icons
     }
-
-    # 6. 写入文件并处理转义斜杠 \/
     with open(JSON_FILE, 'w', encoding='utf-8') as jf:
-        # 使用 json.dumps 保证格式对齐
-        content = json.dumps(data, indent=2, ensure_ascii=False)
-        # 将所有普通斜杠替换为转义斜杠
-        content = content.replace("/", "\\/")
+        content = json.dumps(data, indent=2, ensure_ascii=False).replace("/", "\\/")
         jf.write(content)
+    print(f"✅ JSON 更新完成，共 {icon_count} 个图标")
 
-    print(f"✅ 处理完成！")
-    print(f"📌 固定图标：{len(FIXED_ICONS)} 个（来源：{ROOT_ICON_DIR}/）")
-    print(f"📌 额外图标：{len(final_icons) - len(FIXED_ICONS)} 个（来源：{EMBY_ICON_DIR}/）")
+    # --- 2. 修改 README.md (只在项目简介前加一行，自动清理重复) ---
+    if os.path.exists('README.md'):
+        with open('README.md', 'r', encoding='utf-8') as f:
+            readme = f.read()
+        # 清理掉之前可能产生的多行重复时间
+        readme = re.sub(r"🕒 本项目最近更新于：.*?\n?", "", readme)
+        # 在“项目简介”前面插入
+        new_line = f"🕒 本项目最近更新于：{time_std} (共计 {icon_count} 个图标)\n"
+        readme = readme.replace("项目简介", f"{new_line}项目简介", 1)
+        with open('README.md', 'w', encoding='utf-8') as f:
+            f.write(readme)
+        print("✅ README 修改完成")
+
+    # --- 3. 更新 Telegram 消息 (使用完整模板覆盖) ---
+    token = os.environ.get('TG_BOT_TOKEN')
+    if token:
+        chat_id = "@ligeicon"
+        msg_id = "91"
+        tg_template = """为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。
+
+图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
+
+复制以下图标库链接导入即可( 此图标包不包含Emby服图标，Emby图标请导入下面的那个)
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
+
+QuantumultX一键导入 (https://quantumult.app/x/open-app/ui?module=gallery&type=icon&action=add&content=%5B%22https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json%22%5D)
+Loon一键导入 (https://www.nsloon.com/openloon/import?iconset=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json)
+
+Surge图标库链接：
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json
+
+Emby图标库（只有Emby图标，建议 Fileball Senplayer Yamby Hills Forward 小幻影视 使用）
+https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json
+
+本频道链接：https://t.me/ligeicon    群组：https://t.me/ligeicon_group
+需要适配图标群内反馈即可。无偿适配！！！
+
+一些小的新增可能不会发频道，可以关注这个最近一次更新时间，来判断自己是不是最新的库。
+Github地址：
+https://github.com/lige47/QuanX-icon-rule
+最近一次更新时间为：{time_cn}  目前图标数为{icon_count}个！
+
+自营正规流量卡：
+189卡业 (https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9)  卡业联盟 (https://h5.gantanhao.com/url?value=pVC7v1759672595456)
+有任何流量卡问题联系： @lige0407_bot"""
+
+        final_text = tg_template.format(time_cn=time_cn, icon_count=icon_count)
+        try:
+            url = f"https://api.telegram.org/bot{token}/editMessageText"
+            params = urllib.parse.urlencode({
+                "chat_id": chat_id, "message_id": msg_id, "text": final_text, "disable_web_page_preview": "true"
+            }).encode("utf-8")
+            req = urllib.request.Request(url, data=params)
+            with urllib.request.urlopen(req) as res:
+                print("✅ TG 消息更新成功")
+        except Exception as e:
+            print(f"❌ TG 更新失败: {e}")
 
 if __name__ == "__main__":
-    update_json()
+    update_all()
