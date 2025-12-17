@@ -1,42 +1,70 @@
-name: Update Icons and README Time
+import os
+import json
+from datetime import datetime
 
-on:
-  push:
-    paths:
-      - 'icon/emby/**'
-  workflow_dispatch:
+# === 配置区 ===
+# 1. 根目录和子目录路径
+ROOT_ICON_DIR = "icon"
+EMBY_ICON_DIR = "icon/emby"
 
-# --- 关键：添加以下三行内容 ---
-permissions:
-  contents: write
-# -------------------------
+# 2. 基础 URL
+BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
+JSON_FILE = "lige-emby-icon.json"
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+# === 核心：绝对固定的 26 个图标数据 ===
+# 这些图标目前都在 icon 根目录下
+FIXED_ICONS = [
+    "emby", "chinamobilemcloud", "189", "chinaunicomcloud", "123", "115", 
+    "quark", "alicloud", "alidrive", "baidunetdisk", "baidunetdisk(1)", 
+    "pikpak", "pCloud", "jianguoyun", "OneDrive", "OneDrive(1)", 
+    "alist", "alist(1)", "OpenList", "clouddrive2", "jellyfin", 
+    "xiaohuanRodelPlayer", "NAS", "NAS(1)", "NAS(2)", "qunhuiguanjia"
+]
+
+def update_json():
+    final_icons = []
+    
+    # 1. 写入 26 个固定的列表（指向 icon 根目录）
+    for name in FIXED_ICONS:
+        final_icons.append({
+            "name": name,
+            "url": f"{BASE_URL}{ROOT_ICON_DIR}/{name}.png"
+        })
+
+    # 2. 只扫描 icon/emby 文件夹，寻找“额外”的图标
+    if os.path.exists(EMBY_ICON_DIR):
+        # 获取 emby 文件夹下所有 png 文件名（不带后缀）
+        extra_files = [os.path.splitext(f)[0] for f in os.listdir(EMBY_ICON_DIR) if f.lower().endswith('.png')]
         
-      # ... 剩下的步骤保持不变 ...
+        # 3. 对这些额外图标进行首字母 A-Z 排序
+        extra_files.sort(key=lambda x: x.lower())
+        
+        # 4. 将它们添加到列表末尾（指向 icon/emby 目录）
+        for name in extra_files:
+            # 排除掉可能重复定义的固定图标名
+            if name not in FIXED_ICONS:
+                final_icons.append({
+                    "name": name,
+                    "url": f"{BASE_URL}{EMBY_ICON_DIR}/{name}.png"
+                })
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
+    # 5. 组装最终 JSON 结构
+    today_str = datetime.now().strftime("%y%m%d")
+    data = {
+        "name": "离歌emby专用",
+        "description": f"无偿求更，图标包更新请关注TG频道：@ligeicon 您当前版本日期为{today_str}",
+        "icons": final_icons
+    }
 
-      # 注意：这里改成了 python scripts/update_icons.py
-      - name: Run Update Script
-        run: python scripts/update_icons.py
+    # 6. 写入文件并处理转义斜杠 \/
+    with open(JSON_FILE, 'w', encoding='utf-8') as jf:
+        content = json.dumps(data, indent=2, ensure_ascii=False)
+        content = content.replace("/", "\\/")
+        jf.write(content)
 
-      - name: Update README Time
-        run: |
-          current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
-          sed -i "s/最后更新时间：.*/最后更新时间：$current_time/g" README.md
+    print(f"✅ 修正完成！")
+    print(f"📌 固定图标：{len(FIXED_ICONS)} 个（源自 icon/）")
+    print(f"📌 额外图标：{len(final_icons) - len(FIXED_ICONS)} 个（源自 icon/emby/）")
 
-      - name: Commit and Push
-        run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          git add lige-emby-icon.json README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and time [skip ci]" && git push)
+if __name__ == "__main__":
+    update_json()
