@@ -2,7 +2,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/lige47/QuanX-icon-rule?display_timestamp=author&label=最后更新&style=flat-square)
 [![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen?logo=telegram)](https://t.me/ligeicon)
 ### 2025-12-17 22:42:16 (共计 285 个图标)
-🕒 本项目最近更新于：2025-12-17 22:45:26 (共计 1016 个图标)
+🕒 本项目最近更新于：2025-12-17 22:48:40 (共计 1016 个图标)
 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
 ## 图标库链接：
