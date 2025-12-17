@@ -51,31 +51,32 @@ def update_all():
         content = jf.read().replace("/", "\\/")
         jf.seek(0); jf.write(content); jf.truncate()
 
-    # --- 3. 修改 README.md (强制“单独一行”) ---
+    # --- 3. 修改 README.md (严格实现另起一行) ---
     if os.path.exists('README.md'):
         with open('README.md', 'r', encoding='utf-8') as f:
             readme = f.read()
         
-        # 彻底清理所有旧行
+        # 清理所有旧的时间行，防止重复
         readme = re.sub(r"🕒 本项目最近更新于：.*?\n?", "", readme)
         readme = re.sub(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \(共计 \d+ 个图标\)\n?", "", readme)
         
-        # 强制另起一行：前后各加一个换行符，确保上下都有空隙
+        # 强制另起一行的内容
         new_time_line = f"\n🕒 本项目最近更新于：{time_std} (共计 {total_count} 个图标)\n"
         
+        # 在“项目简介”四个字前面加上换行并插入
         if "### 项目简介：" in readme:
-            readme = readme.replace("### 项目简介：", f"{new_time_line}\n### 项目简介：", 1)
+            readme = readme.replace("### 项目简介：", f"\n{new_time_line}\n### 项目简介：", 1)
         elif "项目简介" in readme:
-            readme = readme.replace("项目简介", f"{new_time_line}\n项目简介", 1)
+            readme = readme.replace("项目简介", f"\n{new_time_line}\n项目简介", 1)
             
         with open('README.md', 'w', encoding='utf-8') as f:
             f.write(readme)
-        print(f"✅ README 更新完成，图标总数：{total_count}")
+        print(f"✅ README 更新完成，当前图标总数：{total_count}")
 
-    # --- 4. 更新 TG 消息 (修复超链接，去掉括号) ---
+    # --- 4. 更新 TG 消息 (完整内容还原，加粗链接全部修复) ---
     token = os.environ.get('TG_BOT_TOKEN')
     if token:
-        # 使用 HTML <a> 标签还原“一键导入”超链接，不再显示丑陋的 URL 括号
+        # 使用 HTML 还原所有格式，包括流量卡链接和一键导入
         tg_template = """<b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
 
 图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
@@ -101,7 +102,7 @@ https://github.com/lige47/QuanX-icon-rule
 <b>最近一次更新时间为：{time_cn}  目前图标数为{total_count}个！</b>
 
 自营正规流量卡：
-189卡业 (https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9)  卡业联盟 (https://h5.gantanhao.com/url?value=pVC7v1759672595456)
+<a href="https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9">189卡业</a>  <a href="https://h5.gantanhao.com/url?value=pVC7v1759672595456">卡业联盟</a>
 有任何流量卡问题联系： @lige0407_bot"""
 
         final_text = tg_template.format(time_cn=time_cn, total_count=total_count)
@@ -117,7 +118,7 @@ https://github.com/lige47/QuanX-icon-rule
             params = urllib.parse.urlencode(data_dict).encode("utf-8")
             req = urllib.request.Request(url, data=params)
             urllib.request.urlopen(req)
-            print("✅ TG 消息更新完成")
+            print("✅ TG 消息更新完成，链接已全部加回并修复")
         except Exception as e:
             print(f"❌ TG 失败: {e}")
 
