@@ -3,8 +3,8 @@ name: Update Icons and README Time
 on:
   push:
     paths:
-      - 'icon/emby/**' # 只有当你向这个文件夹上传图片时才触发
-  workflow_dispatch:   # 允许手动点击运行
+      - 'icon/emby/**'
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,21 +18,18 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 执行 Python 脚本生成 JSON
+      # 注意：这里改成了 python scripts/update_icons.py
       - name: Run Update Script
-        run: python update_icons.py
+        run: python scripts/update_icons.py
 
-      # 执行你原有的修改 README 时间的逻辑 (北京时间)
       - name: Update README Time
         run: |
           current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
           sed -i "s/最后更新时间：.*/最后更新时间：$current_time/g" README.md
 
-      # 统一提交所有改动
       - name: Commit and Push
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add lige-emby-icon.json README.md
-          # 只有在有变动时才提交，避免报错
           git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and time [skip ci]" && git push)
