@@ -1,172 +1,38 @@
-name: Update Last Updated Time
+name: Update Icons and README Time
 
 on:
   push:
-    branches:
-      - main
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    paths:
+      - 'icon/emby/**' # 只有当你向这个文件夹上传图片时才触发
+  workflow_dispatch:   # 允许手动点击运行
 
 jobs:
-  update-readme:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 🟢 第一步：计算数据并修改 README (修复乱码版)
-      - name: Calculate Data & Update README
-        id: update_step
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 执行 Python 脚本生成 JSON
+      - name: Run Update Script
+        run: python update_icons.py
+
+      # 执行你原有的修改 README 时间的逻辑 (北京时间)
+      - name: Update README Time
         run: |
-          python3 - <<EOF
-          import os
-          import re
-          import datetime
-          
-          # 1. 设置时区 (UTC+8)
-          tz_offset = datetime.timedelta(hours=8)
-          now = datetime.datetime.now(datetime.timezone.utc) + tz_offset
-          
-          # 生成两种格式的时间
-          time_cn = now.strftime('%Y年%m月%d日 %H:%M:%S') # 给 Telegram 用
-          time_std = now.strftime('%Y-%m-%d %H:%M:%S')   # 给 README 用
+          current_time=$(date -u -d "+8 hours" +'%Y-%m-%d %H:%M:%S')
+          sed -i "s/最后更新时间：.*/最后更新时间：$current_time/g" README.md
 
-          # 2. 统计 Icon 数量
-          icon_count = 0
-          if os.path.exists("icon"):
-              for root, dirs, files in os.walk("icon"):
-                  for file in files:
-                      if file.lower().endswith(".png"):
-                          icon_count += 1
-          
-          print(f"📊 统计结果: 时间={time_std}, 图标数={icon_count}")
-
-          # 3. 将变量写入 Github Environment
-          with open(os.environ['GITHUB_ENV'], 'a') as f:
-              f.write(f"UPDATE_TIME_CN={time_cn}\n")
-              f.write(f"ICON_COUNT={icon_count}\n")
-
-          # 4. 修改 README.md (乱码修复逻辑)
-          try:
-              # 定义标签常量
-              START_TAG = "<!-- START_SECTION:update_time -->"
-              END_TAG = "<!-- END_SECTION:update_time -->"
-              
-              with open('README.md', 'r', encoding='utf-8') as f:
-                  content = f.read()
-              
-              # 正则：匹配标签及其中间的所有内容
-              # 注意：这里我们手动拼接 regex，确保精准匹配
-              pattern = f"{re.escape(START_TAG)}.*?{re.escape(END_TAG)}"
-              
-              # 新的内容：直接使用干净的标签和换行符，不复用旧内容
-              new_block = f"{START_TAG}\n🕒 本项目最近更新于：{time_std}\n{END_TAG}"
-              
-              # 执行替换
-              new_content = re.sub(pattern, new_block, content, flags=re.DOTALL)
-              
-              with open('README.md', 'w', encoding='utf-8') as f:
-                  f.write(new_content)
-              print("✅ README 修改成功 (已重置标签和编码)")
-              
-          except Exception as e:
-              print(f"❌ 修改 README 失败: {e}")
-              exit(1)
-          EOF
-
-      # 🟢 第二步：提交更改
-      - name: Commit changes
+      # 统一提交所有改动
+      - name: Commit and Push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
-          if [[ -n $(git status -s) ]]; then
-            git add README.md
-            git commit -m "docs: fix encoding and update time [skip ci]"
-            git push
-            echo "🎉 成功推送到 GitHub"
-          else
-            echo "⚠️ 没有文件变化"
-          fi
-
-      # 🟢 第三步：编辑 Telegram 消息
-      - name: Edit Telegram Message
-        env:
-          TG_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_CHAT_ID: ${{ secrets.TG_CHANNEL_ID }}
-          TG_MSG_ID: ${{ secrets.TG_MESSAGE_ID }}
-          UPDATE_TIME: ${{ env.UPDATE_TIME_CN }}
-          ICON_COUNT: ${{ env.ICON_COUNT }}
-          
-          # 👇 文案模板
-          MESSAGE_TEMPLATE: |
-            <b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
-            
-            图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
-            
-            复制以下图标库链接导入即可( 此图标包不包含Emby服图标，Emby图标请导入下面的那个)
-            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json</a>
-            
-            <a href="https://quantumult.app/x/open-app/ui?module=gallery&type=icon&action=add&content=%5B%22https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json%22%5D">QuantumultX一键导入</a>
-            <a href="https://www.nsloon.com/openloon/import?iconset=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">Loon一键导入</a>
-            
-            Surge图标库链接：
-            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json</a>
-            
-            Emby图标库（只有Emby图标，建议 Fileball Senplayer Yamby Hills Forward 小幻影视 使用）
-            <a href="https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json">https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-emby-icon.json</a>
-            
-            本频道链接：<a href="https://t.me/ligeicon">https://t.me/ligeicon</a>   群组：<a href="https://t.me/ligeicon_group">https://t.me/ligeicon_group</a>
-            需要适配图标群内反馈即可。无偿适配！！！
-            
-            一些小的新增可能不会发频道，可以关注这个最近一次更新时间，来判断自己是不是最新的库。
-            Github地址：
-            <a href="https://github.com/lige47/QuanX-icon-rule">https://github.com/lige47/QuanX-icon-rule</a>
-            <b>最近一次更新时间为：{time}  目前图标数为{count}个！</b>
-            
-            自营正规流量卡：
-            <a href="https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9">189卡业</a>  <a href="https://h5.gantanhao.com/url?value=pVC7v1759672595456">卡业联盟</a>
-            有任何流量卡问题联系： @lige0407_bot
-
-        run: |
-          python3 - <<EOF
-          import os
-          import json
-          import urllib.request
-
-          token = os.environ.get('TG_TOKEN')
-          chat_id = os.environ.get('TG_CHAT_ID')
-          msg_id = os.environ.get('TG_MSG_ID')
-          template = os.environ.get('MESSAGE_TEMPLATE')
-          time_str = os.environ.get('UPDATE_TIME')
-          count_str = os.environ.get('ICON_COUNT')
-
-          if not all([token, chat_id, msg_id, template]):
-              print("Error: 缺少必要的环境变量")
-              exit(1)
-
-          final_text = template.replace('{time}', time_str).replace('{count}', count_str)
-
-          data = {
-              "chat_id": chat_id,
-              "message_id": msg_id,
-              "text": final_text,
-              "parse_mode": "HTML",
-              "disable_web_page_preview": True
-          }
-
-          url = f"https://api.telegram.org/bot{token}/editMessageText"
-          headers = {'Content-Type': 'application/json'}
-          
-          try:
-              req = urllib.request.Request(url, data=json.dumps(data).encode('utf-8'), headers=headers, method='POST')
-              with urllib.request.urlopen(req) as response:
-                  print("✅ 消息编辑成功:", response.read().decode('utf-8'))
-          except Exception as e:
-              print(f"❌ 发送失败: {e}")
-              exit(1)
-          EOF
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add lige-emby-icon.json README.md
+          # 只有在有变动时才提交，避免报错
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and time [skip ci]" && git push)
