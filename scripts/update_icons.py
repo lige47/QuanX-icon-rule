@@ -7,9 +7,11 @@ from datetime import datetime, timedelta
 
 # === 配置区 ===
 ROOT_ICON_DIR = "icon"
+EMBY_ICON_DIR = "icon/emby"  # 专门定义 Emby 目录
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
 JSON_FILE = "lige-emby-icon.json"
 
+# 固定图标列表
 FIXED_ICONS = [
     "emby", "chinamobilemcloud", "189", "chinaunicomcloud", "123", "115", 
     "quark", "alicloud", "alidrive", "baidunetdisk", "baidunetdisk(1)", 
@@ -19,27 +21,36 @@ FIXED_ICONS = [
 ]
 
 def update_all():
-    # --- 1. 递归统计全目录图标总数 ---
-    all_png_map = {}
+    # --- 1. 统计逻辑：递归扫描全目录 (只为了算总数) ---
     total_count = 0
     for root, dirs, files in os.walk(ROOT_ICON_DIR):
         for file in files:
             if file.lower().endswith(".png"):
                 total_count += 1
-                name = os.path.splitext(file)[0]
-                rel_path = os.path.join(root, file).replace("\\", "/")
-                all_png_map[name] = rel_path
+    
+    print(f"📊 统计完成，全站图标总数：{total_count}")
 
-    # --- 2. 生成 JSON ---
+    # --- 2. JSON 生成逻辑：严格限制范围 (固定 + icon/emby) ---
     final_icons = []
-    temp_map = all_png_map.copy()
+    
+    # A. 先加入固定的 26 个 (路径指向根目录)
     for name in FIXED_ICONS:
-        path = temp_map.pop(name, f"icon/{name}.png")
-        final_icons.append({"name": name, "url": f"{BASE_URL}{path}"})
-    remaining = sorted(temp_map.keys(), key=lambda x: x.lower())
-    for name in remaining:
-        final_icons.append({"name": name, "url": f"{BASE_URL}{temp_map[name]}"})
+        final_icons.append({"name": name, "url": f"{BASE_URL}icon/{name}.png"})
 
+    # B. 只扫描 icon/emby 文件夹加入额外图标
+    if os.path.exists(EMBY_ICON_DIR):
+        # 只列出 emby 目录下的文件，不递归，也不看根目录
+        emby_files = [f for f in os.listdir(EMBY_ICON_DIR) if f.lower().endswith('.png')]
+        # 排序
+        emby_files.sort(key=lambda x: x.lower())
+        
+        for file in emby_files:
+            name = os.path.splitext(file)[0]
+            # 排除掉如果在固定列表里已经有的名字
+            if name not in FIXED_ICONS:
+                final_icons.append({"name": name, "url": f"{BASE_URL}icon/emby/{file}"})
+
+    # C. 写入 JSON
     now_beijing = datetime.utcnow() + timedelta(hours=8)
     time_std = now_beijing.strftime('%Y-%m-%d %H:%M:%S')
     time_cn = now_beijing.strftime('%Y年%m月%d日 %H:%M:%S')
@@ -47,36 +58,38 @@ def update_all():
     data = {"name": "离歌emby专用", "icons": final_icons}
     with open(JSON_FILE, 'w', encoding='utf-8') as jf:
         json.dump(data, jf, indent=2, ensure_ascii=False)
+    # 处理转义斜杠
     with open(JSON_FILE, 'r+', encoding='utf-8') as jf:
         content = jf.read().replace("/", "\\/")
         jf.seek(0); jf.write(content); jf.truncate()
+        
+    print(f"✅ JSON 生成完成，包含图标数：{len(final_icons)} (仅含 Emby 相关)")
 
-    # --- 3. 修改 README.md (严格实现另起一行) ---
+    # --- 3. 修改 README.md (强制双换行实现“单独一行”) ---
     if os.path.exists('README.md'):
         with open('README.md', 'r', encoding='utf-8') as f:
             readme = f.read()
         
-        # 清理所有旧的时间行，防止重复
+        # 清理旧行
         readme = re.sub(r"🕒 本项目最近更新于：.*?\n?", "", readme)
         readme = re.sub(r"\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2} \(共计 \d+ 个图标\)\n?", "", readme)
         
-        # 强制另起一行的内容
-        new_time_line = f"\n🕒 本项目最近更新于：{time_std} (共计 {total_count} 个图标)\n"
+        # 构造新行 (使用 total_count 统计所有图标)
+        new_time_line = f"\n\n🕒 本项目最近更新于：{time_std} (共计 {total_count} 个图标)\n\n"
         
-        # 在“项目简介”四个字前面加上换行并插入
+        # 插入
         if "### 项目简介：" in readme:
-            readme = readme.replace("### 项目简介：", f"\n{new_time_line}\n### 项目简介：", 1)
+            readme = readme.replace("### 项目简介：", f"{new_time_line}### 项目简介：", 1)
         elif "项目简介" in readme:
-            readme = readme.replace("项目简介", f"\n{new_time_line}\n项目简介", 1)
+            readme = readme.replace("项目简介", f"{new_time_line}项目简介", 1)
             
         with open('README.md', 'w', encoding='utf-8') as f:
             f.write(readme)
-        print(f"✅ README 更新完成，当前图标总数：{total_count}")
+        print("✅ README 更新完成")
 
-    # --- 4. 更新 TG 消息 (完整内容还原，加粗链接全部修复) ---
+    # --- 4. 更新 TG 消息 (保持你要求的格式和链接) ---
     token = os.environ.get('TG_BOT_TOKEN')
     if token:
-        # 使用 HTML 还原所有格式，包括流量卡链接和一键导入
         tg_template = """<b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
 
 图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
@@ -118,7 +131,7 @@ https://github.com/lige47/QuanX-icon-rule
             params = urllib.parse.urlencode(data_dict).encode("utf-8")
             req = urllib.request.Request(url, data=params)
             urllib.request.urlopen(req)
-            print("✅ TG 消息更新完成，链接已全部加回并修复")
+            print("✅ TG 消息更新完成")
         except Exception as e:
             print(f"❌ TG 失败: {e}")
 
