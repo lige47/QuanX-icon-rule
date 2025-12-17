@@ -6,12 +6,19 @@ on:
       - 'icon/emby/**'
   workflow_dispatch:
 
+# --- 关键：添加以下三行内容 ---
+permissions:
+  contents: write
+# -------------------------
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      # ... 剩下的步骤保持不变 ...
 
       - name: Set up Python
         uses: actions/setup-python@v5
