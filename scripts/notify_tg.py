@@ -3,23 +3,29 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta
 
+# 配置图标根目录
+ROOT_DIR = "icon"
+
 def run():
     token = os.environ.get('TG_BOT_TOKEN')
     if not token:
-        print("无 Token，跳过")
+        print("⚠️ 无 Token，跳过 TG 通知")
         return
 
-    # 1. 统计数量
+    # 1. 直接扫描硬盘统计真实数量
     count = 0
-    for root, dirs, files in os.walk("icon"):
-        for f in files:
-            if f.lower().endswith(('.png', '.jpg', '.jpeg', '.ico')):
-                count += 1
+    if os.path.exists(ROOT_DIR):
+        for root, dirs, files in os.walk(ROOT_DIR):
+            for f in files:
+                if f.lower().endswith(('.png', '.jpg', '.jpeg', '.ico')):
+                    count += 1
+    
+    print(f"📊 统计数量: {count}")
 
     # 2. 准备文案
     time_cn = (datetime.utcnow() + timedelta(hours=8)).strftime('%Y年%m月%d日 %H:%M:%S')
     
-    # 注意：这里的链接已经全部改回你的 ligeicon.json
+    # 这里保留你的原始文案和链接
     text = f"""<b>为了减少更新日志每次消息的内容篇幅，以后更新日志只写更新的内容，图标链接等会在该消息提供。该消息会长期置顶。</b>
 
 图标排序为：国旗  代理软件logo  国内可直连软件图标  外网软件图标  无分类的图标 机场logo
@@ -48,7 +54,7 @@ https://github.com/lige47/QuanX-icon-rule
 <a href="https://lc.189sd.cn/index?k=WFpJYmVSWnFjTFk9">189卡业</a>  <a href="https://h5.gantanhao.com/url?value=pVC7v1759672595456">卡业联盟</a>
 有任何流量卡问题联系： @lige0407_bot"""
 
-    # 3. 发送
+    # 3. 发送请求
     try:
         url = f"https://api.telegram.org/bot{token}/editMessageText"
         data = {
@@ -61,9 +67,9 @@ https://github.com/lige47/QuanX-icon-rule
         params = urllib.parse.urlencode(data).encode("utf-8")
         req = urllib.request.Request(url, data=params)
         urllib.request.urlopen(req)
-        print("TG 发送成功")
+        print("✅ TG 发送成功")
     except Exception as e:
-        print(f"TG 发送失败: {e}")
+        print(f"❌ TG 发送失败: {e}")
 
 if __name__ == "__main__":
     run()
