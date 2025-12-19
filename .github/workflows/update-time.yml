@@ -21,30 +21,33 @@ jobs:
         with:
           python-version: '3.x'
 
-      # --- 1. 生成 Emby (保持不变) ---
+      # 1. 清理根目录垃圾图片 (如果你还需要的话)
+      - name: Clean Root Images
+        run: python scripts/delete_root_images.py
+
+      # 2. 生成 Emby 专用版
       - name: Generate Emby JSON
         run: python scripts/generate_emby_json.py
 
-      # --- 2. 生成测试用的 JSON (新加的) ---
-      - name: Generate TEST JSON
-        run: python scripts/generate_test.py
+      # 3. ✅ 生成正式版 (替换了之前的 Test)
+      - name: Generate Main JSON
+        run: python scripts/generate_main_json.py
 
-      # --- 3. 更新 README ---
+      # 4. 更新 README
       - name: Update README
         run: python scripts/update_readme.py
 
-      # --- 4. 发 TG ---
+      # 5. TG 通知
       - name: Notify Telegram
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
         run: python scripts/notify_tg.py
         continue-on-error: true
 
-      # --- 5. 提交 ---
+      # 6. 提交
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update [skip ci]" && git push)
-
