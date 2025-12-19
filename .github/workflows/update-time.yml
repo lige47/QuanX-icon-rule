@@ -20,8 +20,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - name: Clean Root Images
-        run: python scripts/delete_root_images.py
 
       # --- 1. 生成 Emby (保持不变) ---
       - name: Generate Emby JSON
