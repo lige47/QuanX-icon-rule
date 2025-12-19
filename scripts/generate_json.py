@@ -7,7 +7,8 @@ ROOT_ICON_DIR = "icon"
 EMBY_ICON_DIR = "icon/emby"
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
 
-MAIN_JSON_FILE = "QuanX-icon-rule.json"
+# ✅ 修正：改回你原来的文件名
+MAIN_JSON_FILE = "ligeicon.json"       
 EMBY_JSON_FILE = "lige-emby-icon.json"
 
 FIXED_ICONS = [
@@ -19,17 +20,19 @@ FIXED_ICONS = [
 ]
 
 def generate_main_json():
-    print("🚀 [1/2] 正在生成主 JSON (自动扫描)...")
+    print(f"🚀 [1/2] 正在更新主文件: {MAIN_JSON_FILE} ...")
     all_icons_data = []
     
     if not os.path.exists(ROOT_ICON_DIR):
         print(f"❌ 错误: 找不到目录 {ROOT_ICON_DIR}")
         return
 
-    # 扫描一级目录并排序
+    # --- A. 扫描子文件夹 (01Country, 02Proxysoft...) ---
     subfolders = sorted([
         f for f in os.listdir(ROOT_ICON_DIR) 
-        if os.path.isdir(os.path.join(ROOT_ICON_DIR, f)) and not f.startswith('.')
+        if os.path.isdir(os.path.join(ROOT_ICON_DIR, f)) 
+        and not f.startswith('.') 
+        and f != 'emby' 
     ])
 
     for folder in subfolders:
@@ -40,31 +43,42 @@ def generate_main_json():
         ])
         
         if not images: continue
-        print(f"   📂 扫描: {folder} ({len(images)} 个)")
+        print(f"   📂 扫描分类: {folder} ({len(images)} 个)")
 
         for filename in images:
             name = os.path.splitext(filename)[0]
             relative_path = f"{ROOT_ICON_DIR}/{folder}/{filename}"
             encoded_path = urllib.parse.quote(relative_path)
-            
-            all_icons_data.append({
-                "name": name,
-                "url": BASE_URL + encoded_path
-            })
+            all_icons_data.append({"name": name, "url": BASE_URL + encoded_path})
+
+    # --- B. 扫描根目录下的散乱图片 ---
+    root_images = sorted([
+        f for f in os.listdir(ROOT_ICON_DIR) 
+        if os.path.isfile(os.path.join(ROOT_ICON_DIR, f)) 
+        and f.lower().endswith(('.png', '.jpg', '.jpeg', '.ico'))
+    ])
+    
+    if root_images:
+        print(f"   📂 扫描根目录散乱图标 ({len(root_images)} 个)")
+        for filename in root_images:
+            name = os.path.splitext(filename)[0]
+            relative_path = f"{ROOT_ICON_DIR}/{filename}"
+            encoded_path = urllib.parse.quote(relative_path)
+            all_icons_data.append({"name": name, "url": BASE_URL + encoded_path})
 
     with open(MAIN_JSON_FILE, 'w', encoding='utf-8') as f:
         json.dump(all_icons_data, f, indent=2, ensure_ascii=False)
-    print(f"✅ 主 JSON 生成完毕，共 {len(all_icons_data)} 个。")
+    print(f"✅ {MAIN_JSON_FILE} 更新完毕，包含 {len(all_icons_data)} 个图标。")
 
 def generate_emby_json():
-    print("🚀 [2/2] 正在生成 Emby JSON...")
+    print(f"🚀 [2/2] 正在更新 Emby 文件: {EMBY_JSON_FILE} ...")
     final_icons = []
     
-    # 固定图标
+    # 1. 固定图标
     for name in FIXED_ICONS:
         final_icons.append({"name": name, "url": f"{BASE_URL}icon/{name}.png"})
 
-    # Emby 目录图标
+    # 2. Emby 目录图标
     if os.path.exists(EMBY_ICON_DIR):
         emby_files = sorted([f for f in os.listdir(EMBY_ICON_DIR) if f.lower().endswith('.png')], key=lambda x: x.lower())
         for file in emby_files:
@@ -75,7 +89,7 @@ def generate_emby_json():
 
     data = {
         "name": "离歌emby专用",
-        "description": "无偿求更，图标更新请关注TG频道：@ligeicon", # 日期在 TG 脚本里体现即可，或者保持静态
+        "description": "无偿求更，图标更新请关注TG频道：@ligeicon",
         "icons": final_icons
     }
     
@@ -87,7 +101,7 @@ def generate_emby_json():
         content = jf.read().replace("/", "\\/")
         jf.seek(0); jf.write(content); jf.truncate()
         
-    print("✅ Emby JSON 生成完毕。")
+    print(f"✅ {EMBY_JSON_FILE} 更新完毕。")
 
 if __name__ == "__main__":
     generate_main_json()
