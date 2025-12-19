@@ -3,24 +3,6 @@
 [![Chat on Telegram](https://img.shields.io/badge/Chat%20on-Telegram-brightgreen?logo=telegram)](https://t.me/ligeicon)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2025-12-18 01:56:33 (共计 1016 个图标)
-
-
-
 🕒 本项目最近更新于：2025-12-20 01:38:40 (共计 268 个图标)
 
 ### 项目简介：
