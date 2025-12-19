@@ -15,7 +15,8 @@ TOP_ICON_NAME = "lige"
 TARGET_FOLDERS = [
     "01Country",
     "02ProxySoftLogo",
-    "03CNSoft"
+    "03CNSoft",
+    "04ProxySoft"
 ]
 # ===========================================
 
