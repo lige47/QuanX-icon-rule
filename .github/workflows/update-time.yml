@@ -21,30 +21,26 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 1. 清理根目录垃圾图片 (如果你还需要的话)
-      - name: Clean Root Images
-        run: python scripts/delete_root_images.py
-
-      # 2. 生成 Emby 专用版
+      # --- 1. 生成 Emby 专用版 ---
       - name: Generate Emby JSON
         run: python scripts/generate_emby_json.py
 
-      # 3. ✅ 生成正式版 (替换了之前的 Test)
+      # --- 2. 生成正式版 (ligeicon.json) ---
       - name: Generate Main JSON
         run: python scripts/generate_main_json.py
 
-      # 4. 更新 README
+      # --- 3. 更新 README ---
       - name: Update README
         run: python scripts/update_readme.py
 
-      # 5. TG 通知
+      # --- 4. TG 通知 ---
       - name: Notify Telegram
         env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
         run: python scripts/notify_tg.py
         continue-on-error: true
 
-      # 6. 提交
+      # --- 5. 提交所有更改 ---
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
