@@ -5,6 +5,7 @@ on:
     paths:
       - 'icon/**'
       - 'scripts/**'
+      - '.github/workflows/**'  # 把配置文件的变动也加入触发条件，方便调试
   workflow_dispatch:
 
 permissions:
@@ -20,10 +21,25 @@ jobs:
         with:
           python-version: '3.x'
 
-      # --- 1. 这里是你要加的新位置 ---
+      # --- 1. 生成 Emby JSON ---
       - name: Generate Emby JSON
         run: python scripts/generate_emby_json.py
 
       # --- 2. 更新 README ---
       - name: Update README
-        run: p
+        run: python scripts/update_readme.py
+
+      # --- 3. 发送 TG 通知 ---
+      - name: Notify Telegram
+        env:
+          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+        run: python scripts/notify_tg.py
+        continue-on-error: true
+
+      # --- 4. 提交更改 ---
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update [skip ci]" && git push)
