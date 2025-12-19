@@ -16,7 +16,9 @@ TARGET_FOLDERS = [
     "01Country",
     "02ProxySoftLogo",
     "03CNSoft",
-    "04ProxySoft"
+    "04ProxySoft",
+    "05icon",
+    "06jichang"
 ]
 # ===========================================
 
