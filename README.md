@@ -25,7 +25,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/refs/heads/main/lige-em
 ## 使用教程
 https://github.com/lige47/QuanX-icon-rule/blob/main/jiaochen/README.md
 
-# 分流规则（自建）： 
+## 分流规则（自建）： 
 各大AI模型
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/openai.list
@@ -35,7 +35,7 @@ emby：
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/embytest.list
 ```  
 
-# Loon网络检测（入口、落地、已删除IP变化通知） 
+## Loon网络检测（入口、落地、已删除IP变化通知） 
 ### 完整版：https://t.me/zhetengsha
 ```ruby 
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/wangluoxinxi.plugin
