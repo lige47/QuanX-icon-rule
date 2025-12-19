@@ -1,4 +1,4 @@
-name: Update Stats Only
+name: Update All
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  update_stats:
+  update_jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,21 +20,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      # --- 功能 2: 更新 README ---
+      # --- 1. 这里是你要加的新位置 ---
+      - name: Generate Emby JSON
+        run: python scripts/generate_emby_json.py
+
+      # --- 2. 更新 README ---
       - name: Update README
-        run: python scripts/update_readme.py
-
-      # --- 功能 3: 发送 TG 通知 ---
-      - name: Notify Telegram
-        env:
-          TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-        run: python scripts/notify_tg.py
-        continue-on-error: true
-
-      # --- 提交更改 (只提交 README) ---
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update stats [skip ci]" && git push)
+        run: p
