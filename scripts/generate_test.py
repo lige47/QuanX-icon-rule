@@ -14,7 +14,8 @@ TOP_ICON_NAME = "lige"
 # 2. 指定要扫描的文件夹
 TARGET_FOLDERS = [
     "01Country",
-    "02ProxySoftLogo"
+    "02ProxySoftLogo",
+    "03CNSoft"
 ]
 # ===========================================
 
