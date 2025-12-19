@@ -8,7 +8,7 @@ ROOT_ICON_DIR = "icon"
 OUTPUT_FILE = "test.json"
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
 
-# 1. 置顶图标
+# 1. 置顶图标 (文件名，无后缀)
 TOP_ICON_NAME = "lige"
 
 # 2. 指定要扫描的文件夹
@@ -53,26 +53,29 @@ def generate_test_json():
                 full_url = f"{BASE_URL}icon/{folder}/{urllib.parse.quote(filename)}"
                 final_list.append({"name": name, "url": full_url})
 
-    # --- 3. 生成头部信息 (日期) ---
-    # 获取北京时间
+    # --- 3. 生成头部信息 ---
     now_beijing = datetime.utcnow() + timedelta(hours=8)
-    # 格式化日期 (例如 251220)
     version_date = now_beijing.strftime('%y%m%d')
     
     description_text = f"无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为{version_date}"
 
-    # --- 4. 组装最终 JSON 结构 ---
     data = {
         "name": "离歌图标包",
         "description": description_text,
         "icons": final_list
     }
 
-    # --- 5. 写入文件 ---
+    # --- 4. 写入文件 ---
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         
-    print(f"✅ 生成完毕: {OUTPUT_FILE} (版本 {version_date}, 共 {len(final_list)} 个图标)")
+    # --- 5. 关键修复：处理斜杠转义 (\/) ---
+    # Quantumult X 要求 json 里的 url 必须是 https:\/\/... 这种格式
+    with open(OUTPUT_FILE, 'r+', encoding='utf-8') as f:
+        content = f.read().replace("/", "\\/")
+        f.seek(0); f.write(content); f.truncate()
+        
+    print(f"✅ 生成完毕: {OUTPUT_FILE} (已执行斜杠转义，适配 QuanX)")
 
 if __name__ == "__main__":
     generate_test_json()
