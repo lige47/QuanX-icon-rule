@@ -1,48 +1,39 @@
-name: Update Icons and Notify
+name: Auto Update All
 
 on:
   push:
     paths:
       - 'icon/**'
-      - 'scripts/**'  # 如果你改了脚本也触发一下，方便调试
+      - 'scripts/**'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  build:
+  run_scripts:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      # 1. 先生成 JSON (核心)
-      - name: Generate JSONs
-        run: python scripts/generate_json.py
-
-      # 2. 生成完后，更新 README (读取生成的 JSON)
-      - name: Update README
-        run: python scripts/update_readme.py
-
-      # 3. 最后发 TG 通知 (读取生成的 JSON)
-      # 如果 TG 挂了，最好不要让整个 Action 报红，所以加了 continue-on-error (可选)
-      - name: Notify Telegram
-        env:
+      # 1. 生成 JSON (独立)
+      - run: python scripts/generate_json.py
+      
+      # 2. 更新 README (独立)
+      - run: python scripts/update_readme.py
+      
+      # 3. 发 TG (独立)
+      - env:
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
         run: python scripts/notify_tg.py
         continue-on-error: true
 
-      # 4. 提交更改 (JSON 和 README)
-      - name: Commit and Push
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+      # 4. 提交
+      - run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
           git add .
-          # 如果只有 JSON 变了，或者只有 README 变了，都提交
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: update icons and docs [skip ci]" && git push)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto update [skip ci]" && git push)
