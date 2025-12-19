@@ -34,10 +34,7 @@ emby：
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/rule/embytest.list
 ```  
-# 圈x流媒体检测js脚本（搬运，仅更换图标）  
-```ruby 
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/scripts/UI-Action.json
-```
+
 # Loon网络检测（入口、落地、已删除IP变化通知） 
 ### 完整版：https://t.me/zhetengsha
 ```ruby 
