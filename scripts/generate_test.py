@@ -22,7 +22,7 @@ def generate_test_json():
     
     final_list = []
     
-    # --- 1. 添加置顶图标 (lige) ---
+    # --- 1. 添加置顶图标 ---
     top_icon_path = os.path.join(ROOT_ICON_DIR, f"{TOP_ICON_NAME}.png")
     if os.path.exists(top_icon_path):
         print(f"👑 添加置顶: {TOP_ICON_NAME}")
@@ -47,10 +47,16 @@ def generate_test_json():
 
             for filename in images:
                 name = os.path.splitext(filename)[0]
-                # 防重：跳过和置顶同名的
+                # 防重
                 if name == TOP_ICON_NAME: continue
                 
-                full_url = f"{BASE_URL}icon/{folder}/{urllib.parse.quote(filename)}"
+                # ✅✅✅ 核心修复：safe='()' 
+                # 意思是：编码时，忽略括号，保持 (1) 原样
+                # Argentina(1).png -> Argentina(1).png
+                # Argentina (1).png -> Argentina%20(1).png (只转义空格)
+                encoded_name = urllib.parse.quote(filename, safe='()')
+                
+                full_url = f"{BASE_URL}icon/{folder}/{encoded_name}"
                 final_list.append({"name": name, "url": full_url})
 
     # --- 3. 生成头部信息 ---
@@ -69,13 +75,12 @@ def generate_test_json():
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
         
-    # --- 5. 关键修复：处理斜杠转义 (\/) ---
-    # Quantumult X 要求 json 里的 url 必须是 https:\/\/... 这种格式
+    # --- 5. 处理斜杠转义 (QuanX 必需) ---
     with open(OUTPUT_FILE, 'r+', encoding='utf-8') as f:
         content = f.read().replace("/", "\\/")
         f.seek(0); f.write(content); f.truncate()
         
-    print(f"✅ 生成完毕: {OUTPUT_FILE} (已执行斜杠转义，适配 QuanX)")
+    print(f"✅ 生成完毕: {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     generate_test_json()
