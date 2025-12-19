@@ -3,52 +3,49 @@ import json
 import urllib.parse
 
 # ================= 配置区域 =================
-# 图标根目录
 ROOT_ICON_DIR = "icon"
-
-# ✅ 测试输出文件 (生成到根目录的 test.json)
 OUTPUT_FILE = "test.json"
-
-# 你的仓库 Raw 地址
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
+
+# ✅ 重点：只扫描列表里指定的文件夹
+# 你想测哪个，就写哪个，注意大小写要和文件夹名完全一致
+TARGET_FOLDERS = [
+    "01Country"
+]
 # ===========================================
 
 def generate_test_json():
     print(f"🚀 正在生成测试文件: {OUTPUT_FILE}")
+    print(f"🎯 指定扫描目录: {TARGET_FOLDERS}")
     
     final_list = []
     
     if not os.path.exists(ROOT_ICON_DIR):
-        print(f"❌ 错误: 找不到目录 {ROOT_ICON_DIR}")
+        print(f"❌ 错误: 找不到根目录 {ROOT_ICON_DIR}")
         return
 
-    # --- 1. 获取分类文件夹并排序 (01, 02...) ---
-    # 排除 emby 和 隐藏文件
-    subfolders = sorted([
-        f for f in os.listdir(ROOT_ICON_DIR) 
-        if os.path.isdir(os.path.join(ROOT_ICON_DIR, f)) 
-        and f != 'emby' 
-        and not f.startswith('.')
-    ])
-
-    print(f"📋 识别到的分类顺序: {subfolders}")
-
-    # --- 2. 遍历文件夹 ---
-    for folder in subfolders:
+    # --- 遍历你指定的文件夹 ---
+    for folder in TARGET_FOLDERS:
         folder_path = os.path.join(ROOT_ICON_DIR, folder)
         
-        # 获取图片
+        # 1. 检查文件夹是否存在
+        if not os.path.exists(folder_path):
+            print(f"⚠️ 警告: 找不到文件夹 {folder}，跳过...")
+            continue
+            
+        # 2. 获取图片
         images = [f for f in os.listdir(folder_path) if f.lower().endswith(('.png', '.jpg', '.jpeg', '.ico'))]
         
-        # --- 3. 内部按文件名 A-Z 排序 ---
+        # 3. 按文件名 A-Z 排序
         images.sort(key=lambda x: x.lower())
         
         if not images:
+            print(f"⚠️ 警告: 文件夹 {folder} 是空的")
             continue
             
-        print(f"   📂 分类 [{folder}]: {len(images)} 个图标")
+        print(f"   📂 处理分类 [{folder}]: 包含 {len(images)} 个图标")
 
-        # 加入列表
+        # 4. 加入列表
         for filename in images:
             name = os.path.splitext(filename)[0]
             # 路径: icon/01Country/xxx.png
@@ -59,21 +56,7 @@ def generate_test_json():
                 "url": full_url
             })
 
-    # --- 4. (可选) 扫描根目录散图，排在最后 ---
-    root_images = sorted([
-        f for f in os.listdir(ROOT_ICON_DIR) 
-        if os.path.isfile(os.path.join(ROOT_ICON_DIR, f)) 
-        and f.lower().endswith(('.png', '.jpg', '.jpeg', '.ico'))
-    ])
-    
-    if root_images:
-        print(f"   📂 根目录散图: {len(root_images)} 个")
-        for filename in root_images:
-            name = os.path.splitext(filename)[0]
-            full_url = f"{BASE_URL}icon/{urllib.parse.quote(filename)}"
-            final_list.append({"name": name, "url": full_url})
-
-    # --- 5. 写入 test.json ---
+    # --- 写入 test.json ---
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         json.dump(final_list, f, indent=2, ensure_ascii=False)
         
