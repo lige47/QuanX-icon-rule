@@ -29,10 +29,6 @@ jobs:
       - name: Generate Main JSON
         run: python scripts/generate_main_json.py
 
-      # 3. ✅ 生成 Surge 专用版 [新加入]
-      - name: Generate Surge JSON
-        run: python scripts/generate_surge_json.py
-
       # 4. 更新 README
       - name: Update README
         run: python scripts/update_readme.py
