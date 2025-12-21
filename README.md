@@ -9,13 +9,9 @@
 ### 项目简介：
 圈x和loon、fileball 自用图标和规则备份，也会更新一些新的东西出来。图标包括应用图标和部分机场logo。  
 ## 图标库链接：
-### 适用  Quanx  Loon  Fileball Senplayer Yamby Hills
+### 适用  Quanx  Loon  Surge Fileball Senplayer Yamby Hills
 ```ruby
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
-```
-### 适用Surge
-```ruby
-https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon-surge.json
 ```
 
 ### emby专属图标库（建议 Fileball Senplayer  Yamby Hills使用）
