@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为251221",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为251222",
   "icons": [
     {
       "name": "emby",
@@ -1049,6 +1049,10 @@
     {
       "name": "tufeide-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/tufeide-emby.png"
+    },
+    {
+      "name": "UHD",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/UHD.png"
     },
     {
       "name": "Violet-emby",
