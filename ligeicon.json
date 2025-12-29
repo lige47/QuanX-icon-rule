@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为251222",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为251229",
   "icons": [
     {
       "name": "lige",
@@ -2281,6 +2281,10 @@
     {
       "name": "Edge-X",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/Edge-X.png"
+    },
+    {
+      "name": "EdNovas",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/EdNovas.png"
     },
     {
       "name": "efan",
