@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为251231",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260103",
   "icons": [
     {
       "name": "emby",
@@ -261,6 +261,10 @@
     {
       "name": "Cloud-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Cloud-emby.png"
+    },
+    {
+      "name": "Cookie-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Cookie-emby.png"
     },
     {
       "name": "CurlyMouse-emby",
@@ -1097,6 +1101,10 @@
     {
       "name": "XMAX-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/XMAX-emby.png"
+    },
+    {
+      "name": "xyz-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/xyz-emby.png"
     },
     {
       "name": "yezi-emby",
