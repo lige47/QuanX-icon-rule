@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260106",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260107",
   "icons": [
     {
       "name": "lige",
@@ -2425,6 +2425,10 @@
     {
       "name": "HKBEUP(1)",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/HKBEUP(1).png"
+    },
+    {
+      "name": "HKBEUP(2)",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/HKBEUP(2).png"
     },
     {
       "name": "HKBEUP",
