@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260108",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260110",
   "icons": [
     {
       "name": "lige",
@@ -1577,6 +1577,10 @@
     {
       "name": "Perplexity",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/Perplexity.png"
+    },
+    {
+      "name": "Pinterest",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/Pinterest.png"
     },
     {
       "name": "pixiv(1)",
