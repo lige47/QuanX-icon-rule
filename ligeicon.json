@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260110",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260111",
   "icons": [
     {
       "name": "lige",
@@ -697,6 +697,10 @@
     {
       "name": "infuse",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/03CNSoft\/infuse.png"
+    },
+    {
+      "name": "ithome",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/03CNSoft\/ithome.png"
     },
     {
       "name": "jellyfin",
