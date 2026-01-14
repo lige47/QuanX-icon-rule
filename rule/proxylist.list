@@ -86,17 +86,15 @@ IP-CIDR,220.181.174.226/32,no-resolve
 IP-CIDR,220.181.174.34/32,no-resolve
 
 #杂七杂八
+DOMAIN-KEYWORD,doppiocdn
 DOMAIN-SUFFIX,clashwiki.net
 DOMAIN-SUFFIX,cybermania.ws
-DOMAIN-SUFFIX,doppiocdn.com
-DOMAIN-SUFFIX,doppiocdn.live
 DOMAIN-SUFFIX,imbt.one
 DOMAIN-SUFFIX,lrepacks.net
 DOMAIN-SUFFIX,missav.ws
 DOMAIN-SUFFIX,myavlive.com
 DOMAIN-SUFFIX,name.com
 DOMAIN-SUFFIX,o00o.ooo
-DOMAIN-SUFFIX,doppiocdn.org
 DOMAIN-SUFFIX,sehuatang.net
 DOMAIN-SUFFIX,sms-activate.guru
 DOMAIN-SUFFIX,subhd.tv
