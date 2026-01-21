@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260120",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260121",
   "icons": [
     {
       "name": "emby",
@@ -337,6 +337,10 @@
     {
       "name": "erciyuan-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/erciyuan-emby.png"
+    },
+    {
+      "name": "fa-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/fa-emby.png"
     },
     {
       "name": "FaintRay-emby",
@@ -1093,6 +1097,10 @@
     {
       "name": "UHD",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/UHD.png"
+    },
+    {
+      "name": "vemby-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/vemby-emby.png"
     },
     {
       "name": "Violet-emby",
