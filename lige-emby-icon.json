@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260124",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260125",
   "icons": [
     {
       "name": "emby",
@@ -1161,6 +1161,10 @@
     {
       "name": "YounoPlus-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/YounoPlus-emby.png"
+    },
+    {
+      "name": "YounoPro-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/YounoPro-emby.png"
     },
     {
       "name": "youqibing-emby",
