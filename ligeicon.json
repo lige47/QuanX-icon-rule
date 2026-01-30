@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260124",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260130",
   "icons": [
     {
       "name": "lige",
@@ -2641,6 +2641,10 @@
     {
       "name": "NetLove",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/NetLove.png"
+    },
+    {
+      "name": "Netsyo",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/Netsyo.png"
     },
     {
       "name": "NEX",
