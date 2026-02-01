@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260130",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260201",
   "icons": [
     {
       "name": "emby",
@@ -877,6 +877,10 @@
     {
       "name": "Porn-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Porn-emby.png"
+    },
+    {
+      "name": "pornjerry-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/pornjerry-emby.png"
     },
     {
       "name": "PrejuDice-emby",
