@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260212",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260213",
   "icons": [
     {
       "name": "emby",
@@ -247,6 +247,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/chips-emby.png"
     },
     {
+      "name": "chuidaniu(1)-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/chuidaniu(1)-emby.png"
+    },
+    {
       "name": "chuidaniu-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/chuidaniu-emby.png"
     },
@@ -263,12 +267,12 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/CineTrail-emby.png"
     },
     {
-      "name": "cloud-emby",
-      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/cloud-emby.png"
-    },
-    {
       "name": "Cloud-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Cloud-emby.png"
+    },
+    {
+      "name": "cloud-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/cloud-emby.png"
     },
     {
       "name": "Cookie-emby",
