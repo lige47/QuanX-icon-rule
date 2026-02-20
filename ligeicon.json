@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260215",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260220",
   "icons": [
     {
       "name": "lige",
@@ -2543,6 +2543,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/jiux.png"
     },
     {
+      "name": "kendeji(1)",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/kendeji(1).png"
+    },
+    {
       "name": "kendeji",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/kendeji.png"
     },
@@ -2725,6 +2729,18 @@
     {
       "name": "ofonet",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/ofonet.png"
+    },
+    {
+      "name": "oixcloud(1)",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/oixcloud(1).png"
+    },
+    {
+      "name": "oixcloud(2)",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/oixcloud(2).png"
+    },
+    {
+      "name": "oixcloud",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/oixcloud.png"
     },
     {
       "name": "okanc(1)",
