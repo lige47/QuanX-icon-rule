@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260225",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260228",
   "icons": [
     {
       "name": "lige",
@@ -1617,6 +1617,10 @@
     {
       "name": "OtterLife",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/OtterLife.png"
+    },
+    {
+      "name": "paga",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/paga.png"
     },
     {
       "name": "paypal(1)",
