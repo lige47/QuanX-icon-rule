@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260302",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260303",
   "icons": [
     {
       "name": "emby",
@@ -363,6 +363,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/erciyuan-emby.png"
     },
     {
+      "name": "ETFLIX-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/ETFLIX-emby.png"
+    },
+    {
       "name": "fa-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/fa-emby.png"
     },
@@ -569,6 +573,10 @@
     {
       "name": "Kiku-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Kiku-emby.png"
+    },
+    {
+      "name": "KL-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/KL-emby.png"
     },
     {
       "name": "lao-emby",
@@ -1213,6 +1221,10 @@
     {
       "name": "xiaoxiami-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/xiaoxiami-emby.png"
+    },
+    {
+      "name": "xiaoyizi-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/xiaoyizi-emby.png"
     },
     {
       "name": "xiaozhuxuan-emby",
