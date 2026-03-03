@@ -9,6 +9,9 @@ EMBY_DIR = "icon/emby"
 OUTPUT_FILE = "lige-emby-icon.json"
 BASE_URL = "https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/"
 
+# 支持的图片格式 (按优先级排列，优先使用靠前的格式)
+SUPPORTED_EXTS = ["png", "jpg", "jpeg", "gif", "webp"]
+
 # 固定顺序列表 (这些图标可能被你移动到了某个子文件夹里)
 FIXED_ICONS = [
     "emby", "chinamobilemcloud", "189", "chinaunicomcloud", "123", "115", 
@@ -24,31 +27,33 @@ def find_icon_url(icon_name):
     全自动寻找图标：
     1. 先看根目录有没有
     2. 再遍历所有子文件夹 (01, 02...) 寻找
+    支持格式：SUPPORTED_EXTS 中定义的所有格式，按顺序优先匹配
     """
-    filename = f"{icon_name}.png"
-    
-    # 1. 检查根目录 (兼容旧习惯)
-    root_path = os.path.join(ROOT_ICON_DIR, filename)
-    if os.path.exists(root_path):
-        encoded_name = urllib.parse.quote(filename, safe='()')
-        return f"{BASE_URL}icon/{encoded_name}"
-    
-    # 2. 检查所有子文件夹
-    if os.path.exists(ROOT_ICON_DIR):
-        # 获取所有文件夹
-        subfolders = [
-            d for d in os.listdir(ROOT_ICON_DIR) 
-            if os.path.isdir(os.path.join(ROOT_ICON_DIR, d)) 
-        ]
+    for ext in SUPPORTED_EXTS:
+        filename = f"{icon_name}.{ext}"
         
-        for folder in subfolders:
+        # 1. 检查根目录 (兼容旧习惯)
+        root_path = os.path.join(ROOT_ICON_DIR, filename)
+        if os.path.exists(root_path):
+            encoded_name = urllib.parse.quote(filename, safe='()')
+            return f"{BASE_URL}icon/{encoded_name}"
+        
+        # 2. 检查所有子文件夹
+        if os.path.exists(ROOT_ICON_DIR):
+        # 获取所有文件夹
+            subfolders = [
+                d for d in os.listdir(ROOT_ICON_DIR) 
+                if os.path.isdir(os.path.join(ROOT_ICON_DIR, d)) 
+            ]
+            
+            for folder in subfolders:
             # 拼接路径检查是否存在
-            full_path = os.path.join(ROOT_ICON_DIR, folder, filename)
-            if os.path.exists(full_path):
+                full_path = os.path.join(ROOT_ICON_DIR, folder, filename)
+                if os.path.exists(full_path):
                 # 找到了！生成带子文件夹的 URL
-                encoded_folder = urllib.parse.quote(folder)
-                encoded_name = urllib.parse.quote(filename, safe='()')
-                return f"{BASE_URL}icon/{encoded_folder}/{encoded_name}"
+                    encoded_folder = urllib.parse.quote(folder)
+                    encoded_name = urllib.parse.quote(filename, safe='()')
+                    return f"{BASE_URL}icon/{encoded_folder}/{encoded_name}"
 
     return None
 
@@ -64,19 +69,25 @@ def generate_emby():
         if url:
             final_list.append({"name": name, "url": url})
         else:
-            print(f"⚠️ 警告: 找不到固定图标 {name}.png，已跳过")
+            print(f"⚠️ 警告: 找不到固定图标 {name}（支持格式: {', '.join(SUPPORTED_EXTS)}），已跳过")
 
     # --- 2. 扫描 icon/emby 文件夹 (Emby 内部图标) ---
     if os.path.exists(EMBY_DIR):
-        files = [f for f in os.listdir(EMBY_DIR) if f.lower().endswith('.png')]
+        supported_suffixes = tuple(f".{ext}" for ext in SUPPORTED_EXTS)
+        files = [f for f in os.listdir(EMBY_DIR) if f.lower().endswith(supported_suffixes)]
         # 按首字母排序
         files.sort(key=lambda x: x.lower())
         
+        seen_names = set()
         for filename in files:
             name = os.path.splitext(filename)[0]
             # 排重：如果在固定列表里就跳过
             if name in FIXED_ICONS:
                 continue
+            # 排重：同名图标只取第一个匹配的格式 (按 SUPPORTED_EXTS 优先级)
+            if name in seen_names:
+                continue
+            seen_names.add(name)
             
             encoded_name = urllib.parse.quote(filename, safe='()')
             final_list.append({"name": name, "url": f"{BASE_URL}icon/emby/{encoded_name}"})
