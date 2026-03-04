@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260303",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260304",
   "icons": [
     {
       "name": "emby",
@@ -125,6 +125,10 @@
     {
       "name": "1111niceduck-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/1111niceduck-emby.png"
+    },
+    {
+      "name": "404(1)-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/404(1)-emby.png"
     },
     {
       "name": "404-emby",
@@ -303,6 +307,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/DB-emby.png"
     },
     {
+      "name": "dec-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/dec-emby.png"
+    },
+    {
       "name": "DimLight-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/DimLight-emby.png"
     },
@@ -465,6 +473,10 @@
     {
       "name": "HDD-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/HDD-emby.png"
+    },
+    {
+      "name": "HDSky-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/HDSky-emby.png"
     },
     {
       "name": "heikuangchangshare-emby",
@@ -777,6 +789,10 @@
     {
       "name": "nee-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/nee-emby.png"
+    },
+    {
+      "name": "NextNew-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/NextNew-emby.png"
     },
     {
       "name": "nezha(1)-emby",
@@ -1297,6 +1313,10 @@
     {
       "name": "yuebing-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/yuebing-emby.png"
+    },
+    {
+      "name": "yuezhixuan-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/yuezhixuan-emby.png"
     },
     {
       "name": "Yukihasu-emby",
