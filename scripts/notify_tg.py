@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json
 <a href="https://quantumult.app/x/open-app/ui?module=gallery&type=icon&action=add&content=%5B%22https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json%22%5D">QuantumultX一键导入</a>
 <a href="https://www.nsloon.com/openloon/import?iconset=https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/ligeicon.json">Loon一键导入</a>
 
-<b>Emby图标库（只有Emby图标，建议 Fileball Senplayer Yamby Hills Forward 小幻影视 使用）</b>
+<b>Emby图标库（只有Emby图标，建议 Senplayer Fileball Yamby Hills Forward 小幻影视等软件使用）</b>
 https://raw.githubusercontent.com/lige47/QuanX-icon-rule/main/lige-emby-icon.json
 
 本频道链接：https://t.me/ligeicon    群组：https://t.me/ligeicon_group
