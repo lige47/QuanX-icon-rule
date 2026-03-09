@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260304",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260309",
   "icons": [
     {
       "name": "lige",
@@ -2651,6 +2651,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/M5.png"
     },
     {
+      "name": "M78",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/M78.png"
+    },
+    {
       "name": "MagicCloud",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/MagicCloud.png"
     },
@@ -3033,6 +3037,10 @@
     {
       "name": "TNET",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/TNET.png"
+    },
+    {
+      "name": "TrustedAccessPath",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/TrustedAccessPath.png"
     },
     {
       "name": "UHD",
