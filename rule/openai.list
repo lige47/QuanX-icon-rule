@@ -158,6 +158,9 @@ DOMAIN,chat.mistral.ai
 DOMAIN,console.mistral.ai
 DOMAIN-SUFFIX, mistral.ai
 
+# Sora
+DOMAIN-SUFFIX,sora.com
+
 #myself
 DOMAIN-SUFFIX,coze.com
 DOMAIN-SUFFIX,aistudio.google.com
