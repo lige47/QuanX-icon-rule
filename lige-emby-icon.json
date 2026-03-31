@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260330",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260331",
   "icons": [
     {
       "name": "emby",
@@ -1141,6 +1141,10 @@
     {
       "name": "shayugoyi-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/shayugoyi-emby.png"
+    },
+    {
+      "name": "shiguang-lightingTimes-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/shiguang-lightingTimes-emby.png"
     },
     {
       "name": "shijiexian-emby",
