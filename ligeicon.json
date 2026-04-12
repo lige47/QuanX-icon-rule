@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260410",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260412",
   "icons": [
     {
       "name": "lige",
@@ -1433,6 +1433,10 @@
     {
       "name": "disney",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/disney.png"
+    },
+    {
+      "name": "docker",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/docker.png"
     },
     {
       "name": "Drafts",
