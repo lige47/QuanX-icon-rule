@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260413",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260414",
   "icons": [
     {
       "name": "lige",
@@ -1533,6 +1533,14 @@
     {
       "name": "github",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/github.png"
+    },
+    {
+      "name": "gmail(1)",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/gmail(1).png"
+    },
+    {
+      "name": "gmail",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/gmail.png"
     },
     {
       "name": "Gnosis",
