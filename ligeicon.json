@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260414",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260415",
   "icons": [
     {
       "name": "lige",
@@ -2439,6 +2439,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/daishu.png"
     },
     {
+      "name": "dankecloud",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/dankecloud.png"
+    },
+    {
       "name": "DegYax",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/DegYax.png"
     },
@@ -3265,6 +3269,10 @@
     {
       "name": "yifenjichang",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/yifenjichang.png"
+    },
+    {
+      "name": "yinyunltd",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/yinyunltd.png"
     },
     {
       "name": "yiyuanjichang",
