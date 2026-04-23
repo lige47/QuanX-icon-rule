@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260422",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260423",
   "icons": [
     {
       "name": "emby",
@@ -673,6 +673,10 @@
     {
       "name": "levilde-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/levilde-emby.png"
+    },
+    {
+      "name": "Lewamovie",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Lewamovie.png"
     },
     {
       "name": "lily-emby",

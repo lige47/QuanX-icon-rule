@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260422",
+  "description": "无偿求更，图标更新请关注TG频道：@ligeicon ，您当前版本日期为260423",
   "icons": [
     {
       "name": "lige",
@@ -1609,6 +1609,10 @@
     {
       "name": "HSBC",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/HSBC.png"
+    },
+    {
+      "name": "huobi",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/04ProxySoft\/huobi.png"
     },
     {
       "name": "instagram(1)",
