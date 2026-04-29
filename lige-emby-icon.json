@@ -1553,6 +1553,10 @@
     {
       "name": "zox-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/zox-emby.png"
+    },
+    {
+      "name": "zzm-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/zzm-emby.png"
     }
   ]
 }
