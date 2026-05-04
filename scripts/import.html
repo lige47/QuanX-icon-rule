@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>正在导入 SenPlayer 图标包...</title>
+    <script>
+        window.onload = function() {
+            // 获取当前 URL 中的 iconset 参数
+            const params = new URLSearchParams(window.location.search);
+            const iconUrl = params.get('iconset');
+            
+            if (iconUrl) {
+                // 拼接 SenPlayer 协议
+                const senProtocol = "senplayer://importicon?iconset=" + encodeURIComponent(iconUrl);
+                // 执行跳转
+                window.location.href = senProtocol;
+                
+                // 3秒后如果没有自动跳转，显示手动跳转按钮
+                setTimeout(() => {
+                    document.getElementById('manual').style.display = 'block';
+                    document.getElementById('manual-btn').href = senProtocol;
+                }, 3000);
+            } else {
+                document.body.innerHTML = "<h3>参数错误：未找到图标包地址</h3>";
+            }
+        };
+    </script>
+    <style>
+        body { font-family: -apple-system, sans-serif; text-align: center; padding-top: 50px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #007aff; color: #fff; text-decoration: none; border-radius: 8px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h3>正在唤醒 SenPlayer...</h3>
+    <p>请在弹窗中选择“打开”</p>
+    <div id="manual" style="display:none;">
+        <p>如果没反应，请点击下方手动导入：</p>
+        <a id="manual-btn" class="btn" href="#">手动一键导入</a>
+    </div>
+</body>
+</html>
