@@ -15,7 +15,7 @@ FIXED_ICONS = [
     "quark", "alicloud", "alidrive", "baidunetdisk", "baidunetdisk(1)", 
     "pikpak", "pCloud", "jianguoyun", "OneDrive", "OneDrive(1)", 
     "alist", "alist(1)", "OpenList", "clouddrive2", "jellyfin", 
-    "xiaohuanRodelPlayer", "NAS", "NAS(1)", "NAS(2)", "qunhuiguanjia"
+    "xiaohuanRodelPlayer", "senplayer","NAS", "NAS(1)", "NAS(2)", "qunhuiguanjia"
 ]
 # ===========================================
 
