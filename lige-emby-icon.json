@@ -91,6 +91,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/03CNSoft\/xiaohuanRodelPlayer.png"
     },
     {
+      "name": "senplayer",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/03CNSoft\/senplayer.png"
+    },
+    {
       "name": "NAS",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/05icon\/NAS.png"
     },
@@ -1169,10 +1173,6 @@
     {
       "name": "SaturDay",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/SaturDay.png"
-    },
-    {
-      "name": "senplayer",
-      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/senplayer.png"
     },
     {
       "name": "service-emby",
