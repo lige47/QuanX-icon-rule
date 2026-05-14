@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260513",
+  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260514",
   "icons": [
     {
       "name": "emby",
@@ -579,6 +579,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/heikuangchangshare-emby.png"
     },
     {
+      "name": "HelloBlock-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/HelloBlock-emby.png"
+    },
+    {
       "name": "hellohk-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/hellohk-emby.png"
     },
@@ -621,6 +625,10 @@
     {
       "name": "ikun(1)-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/ikun(1)-emby.png"
+    },
+    {
+      "name": "ikun(2)-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/ikun(2)-emby.png"
     },
     {
       "name": "ikun-emby",
@@ -1127,6 +1135,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Polo-emby.png"
     },
     {
+      "name": "polo-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/polo-emby.png"
+    },
+    {
       "name": "Porn-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Porn-emby.png"
     },
@@ -1417,6 +1429,10 @@
     {
       "name": "Terminus-zhongdianzhan-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Terminus-zhongdianzhan-emby.png"
+    },
+    {
+      "name": "TFTV-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/TFTV-emby.png"
     },
     {
       "name": "tg-emby",
