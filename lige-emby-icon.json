@@ -1,6 +1,6 @@
 {
   "name": "离歌Emby专用",
-  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260514",
+  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260515",
   "icons": [
     {
       "name": "emby",
@@ -709,10 +709,6 @@
     {
       "name": "kuailexiaomao-mtdb-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/kuailexiaomao-mtdb-emby.png"
-    },
-    {
-      "name": "lao-emby",
-      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/lao-emby.png"
     },
     {
       "name": "Lemby(1)-emby",
@@ -1489,6 +1485,10 @@
     {
       "name": "wenjian-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/wenjian-emby.png"
+    },
+    {
+      "name": "wlao-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/wlao-emby.png"
     },
     {
       "name": "wujiecloud-emby",
