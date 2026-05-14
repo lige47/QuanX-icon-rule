@@ -263,6 +263,10 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/boluo-emby.png"
     },
     {
+      "name": "cat-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/cat-emby.png"
+    },
+    {
       "name": "cc-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/cc-emby.png"
     },
@@ -307,12 +311,12 @@
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/CineTrail-emby.png"
     },
     {
-      "name": "Cloud-emby",
-      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Cloud-emby.png"
-    },
-    {
       "name": "cloud-emby",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/cloud-emby.png"
+    },
+    {
+      "name": "Cloud-emby",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/emby\/Cloud-emby.png"
     },
     {
       "name": "Cookie-emby",
