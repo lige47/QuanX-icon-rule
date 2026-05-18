@@ -1,6 +1,6 @@
 {
   "name": "离歌图标包",
-  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260516",
+  "description": "图标更新请关注TG频道：@ligeicon ，您当前版本日期为260518",
   "icons": [
     {
       "name": "lige",
@@ -3037,6 +3037,10 @@
     {
       "name": "peiqianjichang",
       "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/peiqianjichang.png"
+    },
+    {
+      "name": "Perfect",
+      "url": "https:\/\/raw.githubusercontent.com\/lige47\/QuanX-icon-rule\/main\/icon\/06jichang\/Perfect.png"
     },
     {
       "name": "pokemon",
